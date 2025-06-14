@@ -204,7 +204,7 @@ export default function FavoritesShowcase() {
         </div>
 
         <div className="relative mt-12" >
-          {/* Music Section */}
+            
           {activeSection === "music" && (
             <div className="animate-fade-in">
               {/* Artist Cards */}
@@ -236,7 +236,9 @@ export default function FavoritesShowcase() {
 
               {/* Album Slider */}
               <div className="mt-12">
-                <h3 className="text-2xl font-bold text-center text-gray-800 mb-6">Albums Collection</h3>
+<h3 className="text-3xl m-12 font-bold text-center text-black-600 drop-shadow-lg mb-6">
+  Albums Collection
+</h3>
                 <div className="relative max-w-6xl mx-auto">
                   <div className="overflow-hidden rounded-xl">
                     <div
