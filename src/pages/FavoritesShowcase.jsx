@@ -15,6 +15,8 @@ import {
   Crown,
   Zap,
 } from "lucide-react"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 export default function FavoritesShowcase() {
   const [activeSection, setActiveSection] = useState("music")
@@ -158,6 +160,10 @@ export default function FavoritesShowcase() {
   }
 
   return (
+    <>
+       <div className="App relative">
+                    <Header  />
+                </div>
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-100 p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
@@ -197,7 +203,7 @@ export default function FavoritesShowcase() {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative mt-12" >
           {/* Music Section */}
           {activeSection === "music" && (
             <div className="animate-fade-in">
@@ -458,5 +464,8 @@ export default function FavoritesShowcase() {
         </div>
       </div>
     </div>
+
+                <Footer />
+</>
   )
 }
