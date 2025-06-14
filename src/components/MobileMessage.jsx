@@ -19,7 +19,7 @@ function MobileMessage() {
       </h1>
       
       <h2 className="text-xl text-center font-bold text-[#884830] mb-4" style={{fontFamily: 'Acme'}}>
-        BAAZIZ Wissal | Full-Stack Developer
+        El Amiri Aamir | Full-Stack Developer
       </h2>
 
       <div className="text-center p-8">
@@ -34,7 +34,7 @@ function MobileMessage() {
           </p>
           <div className="flex justify-center">
             <a 
-              href="mailto:baazizwissal13@gmail.com"
+              href="mailto:aamirelamiri3@gmail.com"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#884830] text-white rounded-lg hover:bg-[#CE7857] transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Contact Me

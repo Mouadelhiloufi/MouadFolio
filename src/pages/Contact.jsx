@@ -86,9 +86,7 @@ export default function Contact() {
                         </p>
                     </motion.div>
 
-                    {/* Main Content Container */}
                     <div className="relative">
-                        {/* Decorative Elements */}
                         <motion.div 
                             className="absolute -top-10 -left-10 text-[#FFE5DD] text-8xl opacity-20"
                             animate={{ rotate: 360 }}
@@ -109,9 +107,8 @@ export default function Contact() {
                                             </div>
                                             <div>
                                                 <p className="opacity-75 text-sm">Email</p>
-                                                <a href="mailto:baazizwissal13@gmail.com" className="hover:underline">
-                                                    baazizwissal13@gmail.com
-                                                </a>
+                                                <a href="mailto:aamirelamiri3@gmail.com" className="hover:underline">
+aamirelamiri3@gmail.com                                                </a>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-4">
@@ -129,9 +126,9 @@ export default function Contact() {
                                         <p className="text-sm opacity-75 mb-4">Find me on</p>
                                         <div className="flex gap-4">
                                             {[
-                                                { icon: faLinkedin, url: 'https://www.linkedin.com/in/baaziz-wissal-311a9526a/' },
-                                                { icon: faGithub, url: 'https://github.com/bwissal13' },
-                                                { icon: faInstagram, url: 'https://www.instagram.com/baazizwissal/' }
+                                                { icon: faLinkedin, url: 'https://www.linkedin.com/in/aamirelamiri/' },
+                                                { icon: faGithub, url: 'https://github.com/ISTIFANO' },
+                                                { icon: faInstagram, url: 'https://www.instagram.com/aamir_el_amiri/' }
                                             ].map((social, index) => (
                                                 <motion.a
                                                     key={index}

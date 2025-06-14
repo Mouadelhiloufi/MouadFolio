@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <header className="header flex  justify-between">
             <a href="/" className="logo text-lg font-bold text-white hover:text-[#FFE4E1] transition-colors duration-300">
-            BAAZIZ Wissal | Full-Stack Developer
+        Aamir El Amiri  | Full-Stack Developer
             </a>
             <button 
                 className="text-[#8B4513] md:hidden text-3xl" 

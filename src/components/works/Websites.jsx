@@ -13,7 +13,7 @@ const Websites = () => {
         title: 'Echo',
         description: 'Echo is a book sharing platform that allows users to share their thoughts and ideas.it is a platform for book lovers to share their thoughts and ideas about books.',
         tags: ['SpringBoot','Spring Security','JWT','MySQL','Docker','JUnit','Mockito','Maven','Jenkins','Liquibase','Angular','Rxjs','Ngrx','Tailwind','Docker','jacoco','postman'],  
-        github: 'https://github.com/bwissal13/Echo',
+        github: 'https://github.com/Echo',
         image: '/Echo.mp4'
       },
         {
@@ -21,7 +21,7 @@ const Websites = () => {
             title: 'ebanking',
             description: 'eBankify is an online banking management system developed using Spring Boot. This application provides a RESTful API for managing banking operations, including user management, account management, and transaction processing. It supports multiple user roles (ADMIN, USER, EMPLOYEE) with defined permissions and access rights.',
             tags: ['SpringBoot', 'Spring Security', 'Jenkins', 'SonarQube','Docker','Liquibase','PostgreSQL'],
-            github: 'https://github.com/bwissal13/eBankify',
+            github: 'https://github.com/eBankify',
             demo: 'https://ebanking-demo.com',
             image: '/ebanking.png'
           },
@@ -30,7 +30,7 @@ const Websites = () => {
             title: 'RecycleHub',
             description: 'RecycleHub is a platform that allows users to recycle their old items and earn points. This application provides a RESTful API for managing recycling operations, including user management, account management, and transaction processing. It supports multiple user roles (ADMIN, USER, EMPLOYEE) with defined permissions and access rights.',
             tags: ['Angular','Rxjs','Ngrx','Tailwind','Docker'],
-            github: 'https://github.com/bwissal13/RecycleHub',
+            github: 'https://github.com/RecycleHub',
             demo: 'https://recycle-hub-eight.vercel.app/',
             image: '/RecycleHub.mp4'
           },
@@ -39,7 +39,7 @@ const Websites = () => {
             title: 'Anazor',
             description: 'Anazor is an innovative art platform combining a marketplace for unique artistic creations and an interactive forum for sharing ideas and critiques. It empowers artists to showcase their work and art enthusiasts to connect in a vibrant and secure online community.',  
             tags: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'JavaScript'],          
-          github: 'https://github.com/bwissal13/nvanazor',
+          github: 'https://github.com/nvanazor',
           demo: 'https://anazor-demo.com',
           image: '/Anazor.png'
         },
@@ -48,7 +48,7 @@ const Websites = () => {
           title: 'Citronix',
           description: 'An agricultural management system for citrus farms that provides comprehensive tracking of tree productivity and harvest management. Features include seasonal harvest monitoring and detailed agricultural data analysis.',
           tags: ['Spring Boot', 'PostgreSQL', 'Swagger','Jaccoco','Junit','Maven','Docker',],
-          github: 'https://github.com/bwissal13/citronix',
+          github: 'https://github.com/citronix',
           demo: 'https://citronix-demo.com',
           image: '/citronix.png'
         },
@@ -57,7 +57,7 @@ const Websites = () => {
           title: 'Evento',
           description: 'Evento is an innovative platform designed to simplify event discovery, reservation, and ticket generation for participants. It empowers organizers to create and manage events seamlessly while providing administrators with tools for efficient oversight. With a user-friendly interface and robust features, Evento delivers an optimal experience for all stakeholders involved.',
           tags: ['PHP','Laravel', 'MySQL', 'Tailwind', 'JavaScript'],
-          github: 'https://github.com/bwissal13/Evento',
+          github: 'https://github.com/Evento',
           demo: 'https://evento-demo.com',
           image: '/Evento.mp4'
         
@@ -67,7 +67,7 @@ const Websites = () => {
           title: 'Job Dating',
           description: 'Job Dating is a platform designed to connect job seekers with potential employers. It provides a comprehensive job search interface, allowing users to browse and apply for various job listings. Employers can post job openings, manage applications, and track candidate progress.',
           tags: ['PHP','Laravel', 'MySQL', 'Tailwind', 'JavaScript'],
-          github: 'https://github.com/bwissal13/job-dating',
+          github: 'https://github.com/job-dating',
           demo: 'https://job-dating-demo.com',
           image: '/jobDating.png'
         },
@@ -76,8 +76,8 @@ const Websites = () => {
           title: 'Stadium Stream',
           description: 'Stadium Stream: A dynamic web application for managing and streaming live sports events, leveraging PHP, MySQL, and modern web technologies for seamless user experience.',
           tags: ['PHP', 'MySQL', 'Tailwind', 'JavaScript'],
-          github: 'https://github.com/bwissal13/StaduimStream',
-          demo: 'https://github.com/bwissal13/StaduimStream',
+          github: 'https://github.com/StaduimStream',
+          demo: 'https://github.com/StaduimStream',
           image: '/StadiumStream.png'
         }
       ];

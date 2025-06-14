@@ -1,7 +1,6 @@
 import QRCode from 'qrcode';
-
-// Replace with your actual Vercel deployment URL after deploying
-const url = 'https://baaziz-wissal-portfolio.vercel.app'; 
+//url netlify
+const url = ''; 
 
 QRCode.toFile('qr-code.png', url, {
   color: {
