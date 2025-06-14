@@ -16,24 +16,28 @@ function Experience() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
                 >
-                    <h3 className="flex items-center gap-3 text-2xl font-semibold text-[#343434]">
-                        <span>💼</span> Java Developer | Dashy
-                    </h3>
-                    <p className="text-[#884830] font-medium mb-4">May 2025 - Present | Casablanca-Settat, Morocco</p>
-                    <ul className="list-disc ml-5 space-y-3 text-[#343434] mt-4">
-                        <li>
-                            Developing robust backend solutions using <span className="font-semibold">Java and Spring Boot</span> framework.
-                        </li>
-                        <li>
-                            Implementing <span className="font-semibold">Agile methodologies and Scrum practices</span> for efficient project delivery.
-                        </li>
-                        <li>
-                            Contributing to enterprise-level applications with focus on scalability and performance optimization.
-                        </li>
-                        <li>
-                            Collaborating with cross-functional teams to deliver high-quality software solutions.
-                        </li>
-                    </ul>
+               <h3 className="flex items-center gap-3 text-2xl font-semibold text-[#343434]">
+  <span>💼</span> Java Backend Developer | Dashy
+</h3>
+<p className="text-[#884830] font-medium mb-4">Mai 2025 - Présent | Casablanca-Settat, Maroc</p>
+<ul className="list-disc ml-5 space-y-3 text-[#343434] mt-4">
+  <li>
+    Analyse des <span className="font-semibold">API REST des plateformes sociales</span> (Instagram, etc.) pour intégration.
+  </li>
+  <li>
+    Développement de <span className="font-semibold">connecteurs backend</span> en <span className="font-semibold">Java avec Spring Boot</span> pour gérer les flux de messagerie.
+  </li>
+  <li>
+    Implémentation de la <span className="font-semibold">gestion des authentifications OAuth 2.0</span> et des <span className="font-semibold">webhooks</span>.
+  </li>
+  <li>
+    Conception de services RESTful robustes et évolutifs pour la communication entre les plateformes.
+  </li>
+  <li>
+    Écriture de <span className="font-semibold">tests unitaires et d’intégration</span> avec JUnit et documentation des API via Swagger.
+  </li>
+</ul>
+
                 </motion.div>
 
                 {/* MORITSOFT */}

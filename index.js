@@ -1,6 +1,6 @@
 import QRCode from 'qrcode';
 //url netlify
-const url = ''; 
+const url = 'https://istifano.netlify.app'; 
 
 QRCode.toFile('qr-code.png', url, {
   color: {
