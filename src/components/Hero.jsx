@@ -18,7 +18,7 @@
                         </a>
                     </div>
                     <div className="hero-image">
-                        <img src="/my.png" alt="Aamir El Amiri " />
+                        <img src="/my.png" className='h-36 ml-16' alt="Aamir El Amiri " />
                     </div>
                 </div>
             </section>
