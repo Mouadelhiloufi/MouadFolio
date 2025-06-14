@@ -20,6 +20,8 @@ export default function Header() {
                     <li><a href="/works" className="block py-2 px-2 text-white hover:text-[#FFE4E1] transition-colors duration-300">Works</a></li>
                     <li><a href="/presentations" className="block py-2 px-2 text-white hover:text-[#FFE4E1] transition-colors duration-300">Presentations</a></li>
                     <li><a href="/contact" className="block py-2 px-2 text-white hover:text-[#FFE4E1] transition-colors duration-300">Contact</a></li>
+                    <li><a href="/Favorites" className="block py-2 px-2 text-white hover:text-[#FFE4E1] transition-colors duration-300">Favorite</a></li>
+
                 </ul>
             </nav>
         </header>
