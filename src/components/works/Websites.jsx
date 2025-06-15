@@ -11,7 +11,7 @@ const Websites = () => {
       {
         id: '00',
         title: 'MécaConnect',
-        description: 'Echo is a book sharing platform that allows users to share their thoughts and ideas.it is a platform for book lovers to share their thoughts and ideas about books.',
+        description: 'Plateforme web pour connecter des mécaniciens freelances 🚗🔧 et des entreprises de transport ou propriétaires d autocars 🚌. Elle permet aux mécaniciens de gérer leurs profils, disponibilités, tarifs, et de recevoir des demandes d intervention, et aux clients de réserver des services, recevoir des devis, et effectuer des paiements sécurisés 💳',
         tags: ['Laravel','Blade','Pgsql','Tailwind'],  
         github: 'https://github.com/ISTIFANO/Mec-Services',
         image: '/0615.mp4'
