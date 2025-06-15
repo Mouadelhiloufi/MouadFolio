@@ -9,7 +9,7 @@ import StarAnimation from "../components/StarAnimation";
 export default function Presentations() {
     const [currentPage, setCurrentPage] = useState(1);
     const [iframeKey, setIframeKey] = useState(0);
-    const [currentPresentation, setCurrentPresentation] = useState(0); // Fixed: Changed from 8 to 0
+    const [currentPresentation, setCurrentPresentation] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalPresentation, setModalPresentation] = useState(null);
 
@@ -34,13 +34,6 @@ export default function Presentations() {
             description: "The 'JavaScript Promises' presentation offers a clear introduction to asynchronous programming in JavaScript. It covers essential concepts like promise creation, chaining with .then(), error handling with .catch(), and best practices for writing clean and predictable asynchronous code.",
             pdfUrl: "/Promeses.pdf",
             totalPages: 21
-        },
-        {
-            id: 4,
-            title: "Php-01",
-            description: "This presentation covers various aspects of PHP development, providing insights and best practices for effective coding.",
-            pdfUrl: "/Copie de php-01.pdf",
-            totalPages: 19
         }
     ];
 
