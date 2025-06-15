@@ -9,80 +9,38 @@ import StarAnimation from "../components/StarAnimation";
 export default function Presentations() {
     const [currentPage, setCurrentPage] = useState(1);
     const [iframeKey, setIframeKey] = useState(0);
-    const [currentPresentation, setCurrentPresentation] = useState(8);
+    const [currentPresentation, setCurrentPresentation] = useState(0); // Fixed: Changed from 8 to 0
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalPresentation, setModalPresentation] = useState(null);
 
     const presentations = [
         {
             id: 1,
-            title: "Spring Security",
-            description: "The 'Spring Security' presentation provides a comprehensive overview of implementing security in Spring applications. It covers key concepts such as authentication and authorization, and offers best practices for securing applications effectively.",
-            pdfUrl: "/springSecurity.pdf",
-            totalPages: 34
+            title: "SOLID Principles",
+            description: "The 'SOLID Principles' presentation offers a clear and structured overview of the five key object-oriented design principles. It explains concepts such as the Single Responsibility Principle and Open/Closed Principle, providing best practices for writing clean, maintainable, and scalable code.",
+            pdfUrl: "/Solide.pdf",
+            totalPages: 24
         },
         {
             id: 2,
-            title: "Spring Security Advanced",
-            description: "Deep dive into advanced Spring Security concepts, including custom authentication providers, method security, OAuth2 integration, and handling complex security scenarios in enterprise applications.",
-            pdfUrl: "/spring security.pdf",
-            totalPages: 14
-        },
-        {
-            id: 3,
-            title: "DTO",
-            description: "Comprehensive guide to Data Transfer Objects (DTOs) in software development. Covers DTO patterns, best practices, mapping strategies, and their role in creating maintainable and efficient applications.",
-            pdfUrl: "/DTO.pdf",
-            totalPages: 12
-        },
-        {
-            id: 4,
-            title: "Classes / Objects in Java",
-            description: "Fundamental exploration of Object-Oriented Programming in Java, covering class structure, object lifecycle, inheritance, encapsulation, and practical implementation of OOP principles.",
-            pdfUrl: "/Classes.pdf",
+            title: "Axios",
+            description: "The 'Axios' presentation provides a practical overview of handling HTTP requests in JavaScript applications. It covers key concepts such as sending GET and POST requests, handling responses and errors, and includes best practices for integrating APIs efficiently and securely.",
+            pdfUrl: "/Axios.pdf",
             totalPages: 17
         },
         {
-            id: 5,
-            title: "Enums in Java",
-            description: "In-depth look at Java Enumerations, including their implementation, best practices, common patterns, and advanced usage scenarios in Java applications.",
-            pdfUrl: "/Enums in java.pdf",
-            totalPages: 5
+            id: 3,
+            title: "JavaScript Promises",
+            description: "The 'JavaScript Promises' presentation offers a clear introduction to asynchronous programming in JavaScript. It covers essential concepts like promise creation, chaining with .then(), error handling with .catch(), and best practices for writing clean and predictable asynchronous code.",
+            pdfUrl: "/Promeses.pdf",
+            totalPages: 21
         },
         {
-            id: 6,
-            title: "Optional in Java",
-            description: "Comprehensive guide to Java's Optional class, covering null handling, functional programming approaches, and best practices for writing more robust and null-safe code.",
-            pdfUrl: "/Optional in java.pdf",
-            totalPages: 9
-        },
-        {
-            id: 7,
-            title: "Stream in Java",
-            description: "Detailed exploration of Java Streams API, including functional programming concepts, stream operations, parallel processing, and practical examples of stream manipulation.",
-            pdfUrl: "/Java Streams.pdf",
-            totalPages: 10
-        },
-        {
-            id: 8,
-            title: "PHP-FIG",
-            description: "Overview of PHP Framework Interop Group (PHP-FIG) standards, covering PSR specifications, coding standards, and best practices for creating interoperable PHP applications.",
-            pdfUrl: "/PHP-FIG.pdf",
-            totalPages: 14
-        },
-        {
-            id: 9,
+            id: 4,
             title: "Php-01",
             description: "This presentation covers various aspects of PHP development, providing insights and best practices for effective coding.",
             pdfUrl: "/Copie de php-01.pdf",
             totalPages: 19
-        },
-        {
-            id: 10,
-            title: "Algorithme de tri et algorithme de recherche",
-            description: "This presentation covers various sorting and searching algorithms, providing insights and best practices for effective implementation.",
-            pdfUrl: "/Algorithme de tri ​et algorithme de recherche​.pdf",
-            totalPages: 34
         }
     ];
 
@@ -152,9 +110,9 @@ export default function Presentations() {
                                         transition={{ duration: 0.3 }}
                                     >
                                         <iframe
-                                            src={`${presentations[8].pdfUrl}#page=1&view=FitH&toolbar=0&navpanes=0`}
+                                            src={`${presentations[currentPresentation].pdfUrl}#page=1&view=FitH&toolbar=0&navpanes=0`}
                                             className="w-full h-full border-none"
-                                            title={`${presentations[8].title} - Page 1`}
+                                            title={`${presentations[currentPresentation].title} - Page 1`}
                                             style={{
                                                 transform: 'scale(1.05)',
                                                 transformOrigin: 'center center',
@@ -177,9 +135,9 @@ export default function Presentations() {
                                         transition={{ duration: 0.3 }}
                                     >
                                         <iframe
-                                            src={`${presentations[8].pdfUrl}#page=2&view=FitH&toolbar=0&navpanes=0`}
+                                            src={`${presentations[currentPresentation].pdfUrl}#page=2&view=FitH&toolbar=0&navpanes=0`}
                                             className="w-full h-full border-none"
-                                            title={`${presentations[8].title} - Page 2`}
+                                            title={`${presentations[currentPresentation].title} - Page 2`}
                                             style={{
                                                 transform: 'scale(1.05)',
                                                 transformOrigin: 'center center',
@@ -199,19 +157,19 @@ export default function Presentations() {
                                     <div className="h-full flex flex-col justify-between">
                                         <div>
                                             <h3 className="text-xl font-bold text-[#884830] mb-3">
-                                                {presentations[8].title}
+                                                {presentations[currentPresentation].title}
                                             </h3>
                                             <p className="text-gray-600 text-sm mb-4">
-                                                {presentations[8].description}
+                                                {presentations[currentPresentation].description}
                                             </p>
                                             <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
                                                 <FontAwesomeIcon icon={faBook} />
-                                                <span>{presentations[8].totalPages} pages</span>
+                                                <span>{presentations[currentPresentation].totalPages} pages</span>
                                             </div>
                                         </div>
                                         
                                         <motion.a
-                                            href={presentations[8].pdfUrl}
+                                            href={presentations[currentPresentation].pdfUrl}
                                             download
                                             className="inline-flex items-center justify-center bg-gradient-to-r from-[#884830] to-[#CE7857] 
                                                      text-white px-4 py-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-300
@@ -295,7 +253,7 @@ export default function Presentations() {
 
                     <div className="grid grid-cols-7 gap-6">
                         <motion.div
-                            className="bg-white rounded-xl shadow-lg overflow-hidden col-span-5 relative"
+                            className="bg-white rounded-xl shadow-lg overflow-hidden col-span-5 relative cursor-pointer"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             whileHover={{ y: -5 }}
@@ -316,8 +274,8 @@ export default function Presentations() {
                                         }}
                                     />
                                 </div>
-                                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center">
-                                    <div className="text-gray-600 text-lg mb-2 animate-bounce font-semibold drop-shadow-md">
+                                <div className="absolute top-4 left-1/2 transform -translate-x-1/2 text-center">
+                                    <div className="text-gray-600 text-lg mb-2 animate-bounce font-semibold drop-shadow-md bg-white/80 px-3 py-1 rounded-full">
                                         Click to see
                                     </div>
                                 </div>
@@ -345,10 +303,10 @@ export default function Presentations() {
                     <div className="flex justify-center mt-6">
                         <motion.button
                             onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
-                            className="text-gray-600 hover:text-gray-800 disabled:text-gray-300 p-3 text-lg rounded-full"
+                            className="text-gray-600 hover:text-gray-800 disabled:text-gray-300 p-3 text-lg rounded-full disabled:cursor-not-allowed"
                             disabled={currentPage === 1}
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
+                            whileHover={{ scale: currentPage === 1 ? 1 : 1.1 }}
+                            whileTap={{ scale: currentPage === 1 ? 1 : 0.9 }}
                         >
                             <FontAwesomeIcon icon={faChevronLeft} />
                         </motion.button>
@@ -357,10 +315,10 @@ export default function Presentations() {
                         </span>
                         <motion.button
                             onClick={() => handlePageChange(Math.min(presentations[currentPresentation].totalPages, currentPage + 1))}
-                            className="text-gray-600 hover:text-gray-800 disabled:text-gray-300 p-3 text-lg rounded-full"
+                            className="text-gray-600 hover:text-gray-800 disabled:text-gray-300 p-3 text-lg rounded-full disabled:cursor-not-allowed"
                             disabled={currentPage === presentations[currentPresentation].totalPages}
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
+                            whileHover={{ scale: currentPage === presentations[currentPresentation].totalPages ? 1 : 1.1 }}
+                            whileTap={{ scale: currentPage === presentations[currentPresentation].totalPages ? 1 : 0.9 }}
                         >
                             <FontAwesomeIcon icon={faChevronRight} />
                         </motion.button>
@@ -368,22 +326,40 @@ export default function Presentations() {
 
                     {/* Modal for PDF */}
                     {isModalOpen && modalPresentation && (
-                        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                            <div className="bg-white rounded-lg shadow-lg overflow-hidden w-11/12 max-w-3xl">
-                                <div className="flex justify-end p-4">
-                                    <button onClick={closeModal} className="text-gray-600 hover:text-gray-800">
-                                        Close
+                        <motion.div 
+                            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={closeModal}
+                        >
+                            <motion.div 
+                                className="bg-white rounded-lg shadow-lg overflow-hidden w-11/12 max-w-4xl max-h-[90vh]"
+                                initial={{ scale: 0.8, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                exit={{ scale: 0.8, opacity: 0 }}
+                                onClick={(e) => e.stopPropagation()}
+                            >
+                                <div className="flex justify-between items-center p-4 border-b">
+                                    <h3 className="text-lg font-semibold text-gray-800">
+                                        {modalPresentation.title}
+                                    </h3>
+                                    <button 
+                                        onClick={closeModal} 
+                                        className="text-gray-600 hover:text-gray-800 text-xl font-bold px-3 py-1 rounded-full hover:bg-gray-100"
+                                    >
+                                        ×
                                     </button>
                                 </div>
                                 <div className="p-4">
                                     <iframe
-                                        src={`${modalPresentation.pdfUrl}#view=FitH&toolbar=0&navpanes=0`}
-                                        className="w-full h-[80vh] border-none"
+                                        src={`${modalPresentation.pdfUrl}#view=FitH&toolbar=1&navpanes=1`}
+                                        className="w-full h-[70vh] border-none"
                                         title={`${modalPresentation.title} - Full View`}
                                     />
                                 </div>
-                            </div>
-                        </div>
+                            </motion.div>
+                        </motion.div>
                     )}
                 </div>
             </motion.div>
@@ -399,4 +375,4 @@ export default function Presentations() {
             `}</style>
         </>
     );
-} 
+}
