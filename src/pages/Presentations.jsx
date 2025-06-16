@@ -18,7 +18,7 @@ export default function Presentations() {
             id: 1,
             title: "SOLID Principles",
             description: "The 'SOLID Principles' presentation offers a clear and structured overview of the five key object-oriented design principles. It explains concepts such as the Single Responsibility Principle and Open/Closed Principle, providing best practices for writing clean, maintainable, and scalable code.",
-            pdfUrl: "/Solide.pdf",
+            pdfUrl: "/Solide5.pdf",
             totalPages: 24
         },
         {
@@ -32,7 +32,7 @@ export default function Presentations() {
             id: 3,
             title: "JavaScript Promises",
             description: "The 'JavaScript Promises' presentation offers a clear introduction to asynchronous programming in JavaScript. It covers essential concepts like promise creation, chaining with .then(), error handling with .catch(), and best practices for writing clean and predictable asynchronous code.",
-            pdfUrl: "/Promeses.pdf",
+            pdfUrl: "/Promeses5.pdf",
             totalPages: 21
         }
     ];
