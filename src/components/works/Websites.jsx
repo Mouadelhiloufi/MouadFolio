@@ -7,16 +7,39 @@ import { useInView } from 'react-intersection-observer';
 
 const Websites = () => {
     const projects = [
-
       {
         id: '00',
         title: 'MécaConnect',
-        description: 'Plateforme web pour connecter des mécaniciens freelances 🚗🔧 et des entreprises de transport ou propriétaires d autocars 🚌. Elle permet aux mécaniciens de gérer leurs profils, disponibilités, tarifs, et de recevoir des demandes d intervention, et aux clients de réserver des services, recevoir des devis, et effectuer des paiements sécurisés 💳',
-        tags: ['Laravel','Blade','Pgsql','Tailwind'],  
+        description: 'Plateforme web pour connecter des mécaniciens freelances 🚗🔧 et des entreprises de transport ou propriétaires d\'autocars 🚌. Elle permet aux mécaniciens de gérer leurs profils, disponibilités, tarifs, et de recevoir des demandes d\'intervention, et aux clients de réserver des services, recevoir des devis, et effectuer des paiements sécurisés 💳',
+        tags: ['Laravel', 'Blade', 'Pgsql', 'Tailwind'],
         github: 'https://github.com/ISTIFANO/Mec-Services',
         image: '/0615.mp4'
+      },
+      {
+        id: '01',
+        title: 'ClickVente',
+        description: 'Ce projet consiste à développer une application web e-commerce en Laravel avec PostgreSQL 🛒. La première phase se concentre sur l\'authentification 🔐, la gestion des rôles 👥, la gestion des produits 🛍️ et l\'ajout au panier 🛒, sans finaliser le processus de commande.',
+        tags: ['Laravel', 'Blade', 'Mysql', 'Tailwind'],
+        github: 'https://github.com/ISTIFANO/ClickVente',
+        image: '/playstation.png'
+      },
+      {
+        id: '02',
+        title: 'PHP MVC Framework',
+        description: 'PHP MVC Framework apprend à construire un framework MVC personnalisé en PHP, en abordant des sujets tels que le routage, les contrôleurs, les modèles, la validation des formulaires, l authentification des utilisateurs et l intégration de Docker avec MySQL.',
+        tags: ['PHP', 'MVC', 'Mysql', 'Tailwind','Docker'],
+        github: 'https://github.com/ISTIFANO/Build-PHP-MVC-Framework',
+        image: '/mvc.png'
+      },
+       {
+        id: '03',
+        title: 'Learnify',
+        description: 'Learnify est une plateforme de cours en ligne innovante 🎓, offrant un système interactif et personnalisé 📚, conçu pour répondre aux besoins des étudiants et enseignants 👩‍🏫👨‍🏫. Une expérience flexible et engageante pour réussir ensemble 🚀.',
+        tags: ['PHP', 'MVC', 'Mysql', 'Tailwind'],
+        github: 'https://github.com/ISTIFANO/learnify-elearning-platform',
+        image: '/udemy.png'
       }
-      ];
+    ];
 
   const [activeProject, setActiveProject] = useState(0);
   const [selectedTags, setSelectedTags] = useState([]);
