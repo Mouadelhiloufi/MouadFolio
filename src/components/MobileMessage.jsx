@@ -32,14 +32,24 @@ function MobileMessage() {
             For the best viewing experience of my portfolio, please visit on a desktop or laptop device. 
             The full version showcases interactive elements and detailed projects that are optimized for larger screens.
           </p>
-          <div className="flex justify-center">
-            <a 
-              href="mailto:aamirelamiri3@gmail.com"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#884830] text-white rounded-lg hover:bg-[#CE7857] transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Contact Me
-            </a>
-          </div>
+          <div className="flex direction-column justify-center gap-4">
+  <a 
+    href="mailto:aamirelamiri3@gmail.com"
+    className="inline-flex items-center gap-2 px-6 py-3 bg-[#884830] text-white rounded-lg hover:bg-[#CE7857] transition-all duration-300 shadow-lg hover:shadow-xl"
+  >
+    Contact Me
+  </a>
+
+  <a 
+    href="/Aamir_El_Amiri_CV_2025.pdf" 
+    download
+    className="inline-flex items-center gap-2 px-6 py-3 bg-[#884830] text-white rounded-lg hover:bg-[#CE7857] transition-all duration-300 shadow-lg hover:shadow-xl"
+  >
+    <span className="arrow">↓</span>
+    Download My CV
+  </a>
+</div>
+
         </motion.div>
       </div>
     </motion.div>

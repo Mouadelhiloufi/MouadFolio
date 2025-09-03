@@ -12,10 +12,14 @@
                             I love building efficient, scalable systems and crafting seamless
                             user experiences across both frontend and backend technologies.
                         </p>
-                        <a href="/works" className="cta-button">
-                            <span className="arrow">→</span>
-                            See My Works
-                        </a>
+                    <a 
+                        href="/Aamir_El_Amiri_CV_2025.pdf" 
+                        className="cta-button" 
+                        download
+                    >
+                        <span className="arrow">↓</span>
+                        Download My CV
+                    </a>
                     </div>
                     <div className="hero-image">
                         <img src="/my.png" className='h-36 ml-16' alt="Aamir El Amiri " />
