@@ -117,7 +117,7 @@ aamirelamiri3@gmail.com                                                </a>
                                             </div>
                                             <div>
                                                 <p className="opacity-75 text-sm">Location</p>
-                                                <p>Youssoufia, Morocco</p>
+                                                <p>Safi, Morocco</p>
                                             </div>
                                         </div>
                                     </div>
