@@ -17,7 +17,7 @@ function Experience() {
                     transition={{ delay: 0.2 }}
                 >
                <h3 className="flex items-center gap-3 text-2xl font-semibold text-[#343434]">
-  <span>💼</span> Java Backend Developer | Dashy
+  Java Backend Developer | Dashy
 </h3>
 <p className="text-[#884830] font-medium mb-4">Mai 2025 - Présent | Casablanca-Settat, Maroc</p>
 <ul className="list-disc ml-5 space-y-3 text-[#343434] mt-4">
@@ -48,7 +48,7 @@ function Experience() {
                     transition={{ delay: 0.4 }}
                 >
                     <h3 className="flex items-center gap-3 text-2xl font-semibold text-[#343434]">
-                        <span>🚀</span> Full-stack Developer | MORITSOFT
+                       Full-stack Developer | MORITSOFT
                     </h3>
                     <p className="text-[#884830] font-medium mb-4">May 2024 - June 2024 | Marrakech, Morocco</p>
                     <ul className="list-disc ml-5 space-y-3 text-[#343434] mt-4">
@@ -75,7 +75,7 @@ function Experience() {
                     transition={{ delay: 0.6 }}
                 >
                     <h3 className="flex items-center gap-3 text-2xl font-semibold text-[#343434]">
-                        <span>🎨</span> Frontend Developer | Smart Influencer
+                       Frontend Developer | Smart Influencer
                     </h3>
                     <p className="text-[#884830] font-medium mb-4">March 2023 - April 2023 | Marrakech-Safi, Morocco</p>
                     <ul className="list-disc ml-5 space-y-3 text-[#343434] mt-4">
