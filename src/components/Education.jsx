@@ -2,8 +2,10 @@ import React from 'react';
 
 function Education() {
     return (
-        <section className="py-10 px-4 bg-white">
-            <h2 className="text-3xl font-bold text-center text-[#CE7857] mb-8" style={{fontFamily: 'Acme'}}>
+        <section className="py-6 sm:py-8 md:py-10 px-4 sm:px-6 lg:px-8 bg-white">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#CE7857] 
+                          mb-6 sm:mb-8" 
+                style={{fontFamily: 'Acme'}}>
                 Education Timeline
             </h2>
             
@@ -65,46 +67,58 @@ function Education() {
                 <div className="block md:hidden">
                     <div className="relative">
                         <div className="absolute left-0 h-full w-[2px] bg-[#884830]"></div>
-                        <div className="flex flex-col items-start space-y-8 pl-8">
+                        <div className="flex flex-col items-start space-y-6 sm:space-y-8 pl-6 sm:pl-8">
                             {/* 2021-2022 */}
                             <div className="flex flex-col items-start">
                                 <div className="flex items-center">
-                                    <div className="w-5 h-5 bg-white rounded-full border-[1.5px] border-[#884830] flex justify-center items-center mr-4">
+                                    <div className="w-5 h-5 bg-white rounded-full border-[1.5px] border-[#884830] flex justify-center items-center mr-3 sm:mr-4">
                                         <div className="w-3 h-3 bg-[#884830] rounded-full"></div>
                                     </div>
-                                    <p className="text-[#884830] font-semibold text-xl">2021-2022</p>
+                                    <p className="text-[#884830] font-semibold text-lg sm:text-xl">2021-2022</p>
                                 </div>
                                 <div className="max-w-xs text-left mt-2">
-                                    <h3 className="text-[#343434] text-lg font-semibold">Baccalauréat Sciences Physiques</h3>
-                                    <p className="text-[#343434] text-sm mt-1">Lycée iben mouataz, Marrakech</p>
+                                    <h3 className="text-[#343434] text-base sm:text-lg font-semibold">
+                                        Baccalauréat Sciences Physiques
+                                    </h3>
+                                    <p className="text-[#343434] text-xs sm:text-sm mt-1">
+                                        Lycée iben mouataz, Marrakech
+                                    </p>
                                 </div>
                             </div>
 
                             {/* 2022-2024 */}
                             <div className="flex flex-col items-start">
                                 <div className="flex items-center">
-                                    <div className="w-5 h-5 bg-white rounded-full border-[1.5px] border-[#884830] flex justify-center items-center mr-4">
+                                    <div className="w-5 h-5 bg-white rounded-full border-[1.5px] border-[#884830] flex justify-center items-center mr-3 sm:mr-4">
                                         <div className="w-3 h-3 bg-[#884830] rounded-full"></div>
                                     </div>
-                                    <p className="text-[#884830] font-semibold text-xl">2022-2024</p>
+                                    <p className="text-[#884830] font-semibold text-lg sm:text-xl">2022-2024</p>
                                 </div>
                                 <div className="max-w-xs text-left mt-2">
-                                    <h3 className="text-[#343434] text-lg font-semibold">BTS Multimédia et Conception Web</h3>
-                                    <p className="text-[#343434] text-sm mt-1">Lycée Mohammed VI, Marrakech - Specialized in multimedia and web design</p>
+                                    <h3 className="text-[#343434] text-base sm:text-lg font-semibold">
+                                        BTS Multimédia et Conception Web
+                                    </h3>
+                                    <p className="text-[#343434] text-xs sm:text-sm mt-1">
+                                        Lycée Mohammed VI, Marrakech - Specialized in multimedia and web design
+                                    </p>
                                 </div>
                             </div>
 
                             {/* 2024-Present */}
                             <div className="flex flex-col items-start">
                                 <div className="flex items-center">
-                                    <div className="w-5 h-5 bg-white rounded-full border-[1.5px] border-[#884830] flex justify-center items-center mr-4">
+                                    <div className="w-5 h-5 bg-white rounded-full border-[1.5px] border-[#884830] flex justify-center items-center mr-3 sm:mr-4">
                                         <div className="w-3 h-3 bg-[#884830] rounded-full"></div>
                                     </div>
-                                    <p className="text-[#884830] font-semibold text-xl">2024-Present</p>
+                                    <p className="text-[#884830] font-semibold text-lg sm:text-xl">2024-Present</p>
                                 </div>
                                 <div className="max-w-xs text-left mt-2">
-                                    <h3 className="text-[#343434] text-lg font-semibold">YouCode - UM6P</h3>
-                                    <p className="text-[#343434] text-sm mt-1">Développement Web - Advanced web development program focusing on full-stack technologies</p>
+                                    <h3 className="text-[#343434] text-base sm:text-lg font-semibold">
+                                        YouCode - UM6P
+                                    </h3>
+                                    <p className="text-[#343434] text-xs sm:text-sm mt-1">
+                                        Développement Web - Advanced web development program focusing on full-stack technologies
+                                    </p>
                                 </div>
                             </div>
                         </div>
