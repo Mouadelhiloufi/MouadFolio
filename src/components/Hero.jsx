@@ -11,8 +11,24 @@
                 <div className="hero-content bg-[#FFE4E1] rounded-xl sm:rounded-2xl 
                                flex flex-col md:flex-row justify-between items-center 
                                p-6 sm:p-8 md:p-10 lg:p-12 gap-6 md:gap-8">
+                    {/* Image - shown on mobile first, then on desktop */}
+                    <div className="hero-image flex-shrink-0 
+                                  w-full md:w-1/3 lg:w-1/4
+                                  flex justify-center md:justify-end
+                                  order-1 md:order-2">
+                        <img 
+                            src="/my.png" 
+                            className='w-auto h-auto max-w-[180px] max-h-[180px] 
+                                     sm:max-w-[200px] sm:max-h-[200px]
+                                     md:max-w-[250px] md:max-h-[250px] 
+                                     lg:max-w-[300px] lg:max-h-[300px]
+                                     object-contain' 
+                            alt="Aamir El Amiri" 
+                        />
+                    </div>
                     <div className="hero-text max-w-full md:max-w-[50%] 
-                                   mx-auto md:mx-0 text-center md:text-left">
+                                   mx-auto md:mx-0 text-center md:text-left
+                                   order-2 md:order-1">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
                                      font-bold mb-2 sm:mb-3 md:mb-4" 
                             style={{fontFamily: 'Acme'}}>
@@ -42,15 +58,6 @@
                             <span className="arrow mr-2">↓</span>
                             Download My CV
                         </a>
-                    </div>
-                    <div className="hero-image flex-shrink-0 
-                                  hidden md:block md:w-1/3 lg:w-1/4">
-                        <img 
-                            src="/my.png" 
-                            className='w-full h-auto max-h-[200px] md:max-h-[250px] lg:max-h-[300px] 
-                                     object-contain ml-0 md:ml-4 lg:ml-8' 
-                            alt="Aamir El Amiri" 
-                        />
                     </div>
                 </div>
             </section>
