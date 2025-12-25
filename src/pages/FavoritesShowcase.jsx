@@ -164,38 +164,40 @@ export default function FavoritesShowcase() {
        <div className="App relative">
                     <Header  />
                 </div>
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-100 p-4 md:p-8">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-100 p-4 sm:p-6 md:p-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-12">
-          <div className="flex justify-center items-center gap-3 mb-6">
-            <Sparkles className="text-orange-500" size={32} />
-            <h1 className="text-5xl font-bold bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent">
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="flex justify-center items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+            <Sparkles className="text-orange-500" size={24} />
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold 
+                          bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent">
               My Favorites
             </h1>
-            <Sparkles className="text-orange-500" size={32} />
+            <Sparkles className="text-orange-500" size={24} />
           </div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4 sm:px-0">
             Discover the artists, athletes, and passions that inspire me every day
           </p>
         </div>
 
         {/* Navigation Tabs */}
-        <div className="flex justify-center mb-12">
-          <div className="bg-white rounded-2xl shadow-lg p-2 flex gap-2">
+        <div className="flex justify-center mb-8 sm:mb-12 px-2 sm:px-0">
+          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg p-1 sm:p-2 flex gap-1 sm:gap-2 flex-wrap justify-center">
             {sections.map((section) => {
               const IconComponent = section.icon
               return (
                 <button
                   key={section.id}
                   onClick={() => setActiveSection(section.id)}
-                  className={`flex items-center gap-2 px-6 py-3 rounded-xl transition-all duration-300 ${
+                  className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-4 md:px-6 py-2 sm:py-3 
+                           rounded-lg sm:rounded-xl transition-all duration-300 text-xs sm:text-sm md:text-base ${
                     activeSection === section.id
                       ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg"
                       : "text-gray-600 hover:bg-orange-50 hover:text-orange-600"
                   }`}
                 >
-                  <IconComponent size={20} />
+                  <IconComponent size={16} className="sm:w-5 sm:h-5" />
                   <span className="font-medium">{section.label}</span>
                 </button>
               )
@@ -208,54 +210,66 @@ export default function FavoritesShowcase() {
           {activeSection === "music" && (
             <div className="animate-fade-in">
               {/* Artist Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
                 {artists.map((artist, index) => (
                   <div key={index} className="flex flex-col items-center">
                     <div className="relative group">
                       <img
                         src={artist.image || "/placeholder.svg"}
                         alt={artist.name}
-                        className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-orange-100 shadow-lg transition-transform duration-300 group-hover:scale-105"
+                        className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 
+                                 rounded-full object-cover border-4 border-orange-100 
+                                 shadow-lg transition-transform duration-300 group-hover:scale-105"
                       />
-                      <div className="absolute inset-0 rounded-full border-4 border-transparent group-hover:border-orange-300 transition-all duration-300"></div>
+                      <div className="absolute inset-0 rounded-full border-4 border-transparent 
+                                    group-hover:border-orange-300 transition-all duration-300"></div>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-800 mt-4">{artist.name}</h3>
-                    <p className="text-gray-600 text-sm">{artist.genre}</p>
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-800 mt-3 sm:mt-4">
+                      {artist.name}
+                    </h3>
+                    <p className="text-gray-600 text-xs sm:text-sm">{artist.genre}</p>
                     <a
                       href={artist.spotifyUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-4 inline-flex items-center gap-2 bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2 rounded-full hover:from-green-600 hover:to-green-700 transition-all duration-300"
+                      className="mt-3 sm:mt-4 inline-flex items-center gap-2 
+                               bg-gradient-to-r from-green-500 to-green-600 text-white 
+                               px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm
+                               hover:from-green-600 hover:to-green-700 transition-all duration-300"
                     >
                       <span>Listen on Spotify</span>
-                      <ExternalLink size={16} />
+                      <ExternalLink size={14} className="sm:w-4 sm:h-4" />
                     </a>
                   </div>
                 ))}
               </div>
 
               {/* Album Slider */}
-              <div className="mt-12">
-<h3 className="text-3xl m-12 font-bold text-center text-black-600 drop-shadow-lg mb-6">
-  Albums Collection
-</h3>
-                <div className="relative max-w-6xl mx-auto">
+              <div className="mt-8 sm:mt-12">
+                <h3 className="text-2xl sm:text-3xl font-bold text-center text-black-600 
+                             drop-shadow-lg mb-4 sm:mb-6 mx-4 sm:mx-12">
+                  Albums Collection
+                </h3>
+                <div className="relative max-w-6xl mx-auto px-2 sm:px-0">
                   <div className="overflow-hidden rounded-xl">
                     <div
                       className="flex transition-transform duration-1000 ease-in-out"
                       style={{ transform: `translateX(-${currentSlide * (100 / 3)}%)` }}
                     >
                       {allAlbumImages.map((album, index) => (
-                        <div key={index} className="w-1/3 flex-shrink-0 px-2">
-                          <div className="bg-black rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+                        <div key={index} className="w-1/3 flex-shrink-0 px-1 sm:px-2">
+                          <div className="bg-black rounded-lg sm:rounded-xl overflow-hidden 
+                                       shadow-lg hover:scale-105 transition-transform duration-300">
                             <img
                               src={album.image || "/placeholder.svg"}
                               alt={album.album}
-                              className="w-full h-[250px] object-cover"
+                              className="w-full h-[150px] sm:h-[200px] md:h-[250px] object-cover"
                             />
-                            <div className="p-3 text-white">
-                              <h4 className="font-bold text-md truncate">{album.album}</h4>
-                              <p className="text-sm text-gray-400">{album.artist}</p>
+                            <div className="p-2 sm:p-3 text-white">
+                              <h4 className="font-bold text-xs sm:text-sm md:text-md truncate">
+                                {album.album}
+                              </h4>
+                              <p className="text-xs sm:text-sm text-gray-400">{album.artist}</p>
                             </div>
                           </div>
                         </div>
@@ -266,15 +280,19 @@ export default function FavoritesShowcase() {
                   {/* Navigation Buttons */}
                   <button
                     onClick={handlePrev}
-                    className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10 hover:bg-orange-100 transition-colors"
+                    className="absolute left-0 sm:left-2 top-1/2 transform -translate-y-1/2 
+                             bg-white p-1.5 sm:p-2 rounded-full shadow-md z-10 
+                             hover:bg-orange-100 transition-colors"
                   >
-                    <ChevronLeft className="text-orange-600" />
+                    <ChevronLeft className="text-orange-600 w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
                   <button
                     onClick={handleNext}
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10 hover:bg-orange-100 transition-colors"
+                    className="absolute right-0 sm:right-2 top-1/2 transform -translate-y-1/2 
+                             bg-white p-1.5 sm:p-2 rounded-full shadow-md z-10 
+                             hover:bg-orange-100 transition-colors"
                   >
-                    <ChevronRight className="text-orange-600" />
+                    <ChevronRight className="text-orange-600 w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
 
                   {/* Indicators */}
@@ -314,11 +332,13 @@ export default function FavoritesShowcase() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mt-16 mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mt-8 sm:mt-12 md:mt-16 mx-auto">
                 {snookerPlayers.map((player, index) => (
                   <div key={index} className="group">
-                    <div className="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-500 hover:-translate-y-3 border border-green-100">
-                      <div className="relative overflow-hidden h-80">
+                    <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden 
+                                  hover:shadow-3xl transition-all duration-500 hover:-translate-y-3 
+                                  border border-green-100">
+                      <div className="relative overflow-hidden h-60 sm:h-72 md:h-80">
                         <img
                           src={player.image || "/placeholder.svg"}
                           alt={player.name}
@@ -410,11 +430,13 @@ export default function FavoritesShowcase() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
                 {footballers.map((player, index) => (
                   <div key={index} className="group">
-                    <div className="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-500 hover:-translate-y-3 border-2 border-gray-100">
-                      <div className="relative overflow-hidden h-80">
+                    <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden 
+                                  hover:shadow-3xl transition-all duration-500 hover:-translate-y-3 
+                                  border-2 border-gray-100">
+                      <div className="relative overflow-hidden h-60 sm:h-72 md:h-80">
                         <img
                           src={player.image || "/placeholder.svg"}
                           alt={player.name}

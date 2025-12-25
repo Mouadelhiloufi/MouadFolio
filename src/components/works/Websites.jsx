@@ -122,26 +122,29 @@ const Websites = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-white">
+    <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
        
                     <motion.h3 
-                        className="text-2xl font-bold text-[#884830] mb-8" 
-                        style={{fontFamily: 'Acme', marginLeft: '90px'}}
+                        className="text-xl sm:text-2xl font-bold text-[#884830] mb-6 sm:mb-8 
+                                  ml-0 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-24" 
+                        style={{fontFamily: 'Acme'}}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                     >
                         Websites I've Realized
                     </motion.h3>
-        <p className="text-gray-700 mb-8">
+        <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-6 sm:mb-8 px-2 sm:px-0">
           Here are websites I've developed, highlighting my expertise in web development. Each project demonstrates 
           my ability to build responsive, functional, and user-friendly websites while implementing effective coding 
           practices and modern technologies.
         </p>
 
         {/* Tags Filter */}
-        <div className="mb-8">
-          <h3 className="text-lg font-semibold text-[#884830] mb-3">Filter by technology:</h3>
+        <div className="mb-6 sm:mb-8">
+          <h3 className="text-base sm:text-lg font-semibold text-[#884830] mb-2 sm:mb-3">
+            Filter by technology:
+          </h3>
           <div className="flex flex-wrap gap-2">
             {allTags.map((tag) => (
               <button
@@ -162,7 +165,7 @@ const Websites = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8">
           {/* Project List */}
           <div className="lg:w-1/3">
             {filteredProjects.length === 0 ? (
@@ -177,16 +180,19 @@ const Websites = () => {
                   animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   key={project.id}
-                  className={`cursor-pointer p-4 border-l-4 mb-4 transition-all duration-300 ${
+                  className={`cursor-pointer p-3 sm:p-4 border-l-4 mb-3 sm:mb-4 transition-all duration-300 ${
                     activeProject === index 
                       ? 'border-[#884830] bg-[#FFE5DD]' 
                       : 'border-transparent hover:border-[#CE7857] hover:bg-[#FFE5DD]/50'
                   }`}
                   onClick={() => setActiveProject(index)}
                 >
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-[#884830]">{project.id}</span>
-                    <h3 className="text-xl font-semibold text-[#884830]" style={{fontFamily: 'Acme'}}>
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-lg sm:text-xl md:text-2xl font-bold text-[#884830]">
+                      {project.id}
+                    </span>
+                    <h3 className="text-base sm:text-lg md:text-xl font-semibold text-[#884830]" 
+                        style={{fontFamily: 'Acme'}}>
                       {project.title}
                     </h3>
                   </div>
@@ -199,7 +205,7 @@ const Websites = () => {
           {filteredProjects.length > 0 && (
             <div className="lg:w-2/3">
               <div 
-                className="relative aspect-video rounded-lg overflow-hidden mb-6 
+                className="relative aspect-video rounded-lg overflow-hidden mb-4 sm:mb-6 
                              border border-[#FFE5DD]
                              hover:border-[#884830]/30
                              transition-all duration-300
@@ -227,12 +233,13 @@ const Websites = () => {
                 )}
               </div>
 
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-[#884830]" style={{fontFamily: 'Acme'}}>
+              <div className="space-y-3 sm:space-y-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-[#884830]" 
+                    style={{fontFamily: 'Acme'}}>
                   {filteredProjects[activeProject].title}
                 </h3>
                 
-                <p className="text-gray-700">
+                <p className="text-sm sm:text-base text-gray-700">
                   {filteredProjects[activeProject].description}
                 </p>
 
@@ -240,19 +247,20 @@ const Websites = () => {
                   {filteredProjects[activeProject].tags.map((tag, index) => (
                     <span 
                       key={index}
-                      className="px-3 py-1 bg-[#884830] text-white rounded-full text-sm"
+                      className="px-2 sm:px-3 py-1 bg-[#884830] text-white rounded-full text-xs sm:text-sm"
                     >
                       #{tag}
                     </span>
                   ))}
                 </div>
 
-                <div className="pt-4">
+                <div className="pt-3 sm:pt-4">
                   <a 
                     href={filteredProjects[activeProject].github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#884830] text-white rounded-lg 
+                    className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 
+                             bg-[#884830] text-white rounded-lg text-sm sm:text-base
                              hover:bg-[#CE7857] transition-colors shadow-md hover:shadow-lg"
                   >
                     <FontAwesomeIcon icon={faGithub} />

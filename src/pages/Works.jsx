@@ -18,13 +18,16 @@ export default function WorksPage() {
                 </div>
                 
                 <motion.button
-                    className="fixed bottom-8 right-8 bg-[#884830] text-white p-4 rounded-full shadow-lg hover:shadow-xl"
+                    className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 
+                             bg-[#884830] text-white p-3 sm:p-4 rounded-full 
+                             shadow-lg hover:shadow-xl text-lg sm:text-xl z-50"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1 }}
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    aria-label="Scroll to top"
                 >
                     ↑
                 </motion.button>

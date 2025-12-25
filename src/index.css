@@ -59,12 +59,28 @@ body {
   
   .hero-title {
     position: absolute;
-    top: -60px;
-    left: 60px;
-    font-size: 5rem;
+    top: -40px;
+    left: 16px;
+    font-size: 3rem;
     font-family: 'Acme', sans-serif;
     margin: 0;
     z-index: 1;
+  }
+  
+  @media (min-width: 640px) {
+    .hero-title {
+      top: -50px;
+      left: 32px;
+      font-size: 4rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-title {
+      top: -60px;
+      left: 60px;
+      font-size: 5rem;
+    }
   }
   
   .hero-content {
@@ -80,8 +96,15 @@ body {
   }
   
   .hero-text {
-    max-width: 50%;
-    margin: 0px 0px 0px 60px;
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-text {
+      max-width: 50%;
+      margin: 0px 0px 0px 60px;
+    }
   }
   
   .hero-text h2 {
@@ -161,60 +184,7 @@ body {
     display: none;
   }
   
-  @media (max-width: 764px) {
-    .hero-image img {
-        display: none;
-    }
-    .hero-text {
-        max-width: 100%;
-        margin: 2rem;
-    }
-    .hero-text h2 {
-        font-size: 2rem;
-    }
-    .hero-text h3 {
-        font-size: 1.5rem;
-    }
-    .hero-text p {
-        font-size: 1rem;
-    }
-    .cta-button {
-      font-size: 0.8rem;
-    } 
-    .about{
-      margin-top: 4rem;
-    }
-    .about p {
-      font-size: 0.8rem;
-    }
-    .about h2 {
-      font-size: 1.5rem;
-    }
-  }
-  
-  @media (max-width: 360px) {
-    .about{
-      margin-top: 3rem;
-    }
-    .hero-title {
-      font-size: 3.5rem;
-    }
-    .hero-text h2 {
-      font-size: 1.5rem;
-    }
-    .hero-text h3 {
-      font-size: 1rem;
-    }
-    .hero-text p {
-      font-size: 0.8rem;
-    }
-    .about p {
-      font-size: 0.8rem;
-    }
-    .about h2 {
-      font-size: 1.5rem;
-    } 
-  }
+  /* Mobile-specific adjustments are now handled by Tailwind responsive utilities */
   
   @media (max-width: 768px) {
     .timeline-container {
@@ -248,36 +218,19 @@ body {
     animation: bounce 2s infinite;
   }
   
-  @media (max-width: 768px) {
-    html, body {
-      overflow: hidden;
-      height: 100%;
-      position: fixed;
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .App {
+      padding: 0 12px;
+    }
+    
+    .header {
+      flex-wrap: wrap;
+    }
+    
+    .nav {
       width: 100%;
-    }
-
-    #root {
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    /* Hide scrollbars */
-    ::-webkit-scrollbar {
-      display: none;
-    }
-
-    * {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-    }
-  }
-
-  @media (min-width: 769px) {
-    .mobile-message {
-      display: none;
-    }
-    .desktop-only {
-      display: block;
+      margin-top: 0.5rem;
     }
   }
   

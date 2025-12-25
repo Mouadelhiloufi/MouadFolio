@@ -65,7 +65,7 @@ export default function Presentations() {
                 <StarAnimation />
             </div>
             <motion.div 
-                className="py-16 px-4"
+                className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -74,25 +74,26 @@ export default function Presentations() {
                     <motion.div 
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="mb-12"
+                        className="mb-8 sm:mb-12"
                     >
-                        <h1 className="text-4xl font-bold text-[#884830] mb-4" style={{fontFamily: 'Acme'}}>
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#884830] mb-3 sm:mb-4" 
+                            style={{fontFamily: 'Acme'}}>
                             Presentations
                         </h1>
-                        <h2 className="text-2xl font-semibold text-[#884830] mb-3">
+                        <h2 className="text-xl sm:text-2xl font-semibold text-[#884830] mb-2 sm:mb-3">
                             Discover a Collection of Knowledge and Insights
                         </h2>
-                        <p className="text-gray-700">
+                        <p className="text-sm sm:text-base md:text-lg text-gray-700">
                             Explore a curated selection of my presentations, where ideas meet innovation. Dive into topics that showcase technical expertise, problem-solving strategies, and practical solutions—all crafted to inform, inspire, and empower.
                         </p>
                     </motion.div>
 
-                    <div className="max-w-6xl mx-auto mb-16">
-                        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-                            <div className="grid grid-cols-12 gap-8 p-8">
+                    <div className="max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-16">
+                        <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden">
+                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 md:gap-8 p-4 sm:p-6 md:p-8">
                                 {/* Left Page */}
                                 <motion.div 
-                                    className="col-span-5"
+                                    className="col-span-1 lg:col-span-5 order-1"
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.2 }}
@@ -117,7 +118,7 @@ export default function Presentations() {
 
                                 {/* Right Page */}
                                 <motion.div 
-                                    className="col-span-5"
+                                    className="col-span-1 lg:col-span-5 order-2"
                                     initial={{ opacity: 0, x: 20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.2 }}
@@ -142,20 +143,20 @@ export default function Presentations() {
 
                                 {/* Description and Download */}
                                 <motion.div 
-                                    className="col-span-2"
+                                    className="col-span-1 lg:col-span-2 order-3 lg:order-3"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.3 }}
                                 >
-                                    <div className="h-full flex flex-col justify-between">
+                                    <div className="h-full flex flex-col justify-between gap-4">
                                         <div>
-                                            <h3 className="text-xl font-bold text-[#884830] mb-3">
+                                            <h3 className="text-lg sm:text-xl font-bold text-[#884830] mb-2 sm:mb-3">
                                                 {presentations[currentPresentation].title}
                                             </h3>
-                                            <p className="text-gray-600 text-sm mb-4">
+                                            <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
                                                 {presentations[currentPresentation].description}
                                             </p>
-                                            <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
+                                            <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-500 mb-4">
                                                 <FontAwesomeIcon icon={faBook} />
                                                 <span>{presentations[currentPresentation].totalPages} pages</span>
                                             </div>
@@ -165,7 +166,8 @@ export default function Presentations() {
                                             href={presentations[currentPresentation].pdfUrl}
                                             download
                                             className="inline-flex items-center justify-center bg-gradient-to-r from-[#884830] to-[#CE7857] 
-                                                     text-white px-4 py-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-300
+                                                     text-white px-3 sm:px-4 py-2 sm:py-3 rounded-xl shadow-md hover:shadow-lg 
+                                                     transition-all duration-300 text-sm sm:text-base
                                                      w-full"
                                             whileHover={{ scale: 1.05 }}
                                             whileTap={{ scale: 0.95 }}
@@ -244,16 +246,16 @@ export default function Presentations() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-7 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-7 gap-4 sm:gap-6">
                         <motion.div
-                            className="bg-white rounded-xl shadow-lg overflow-hidden col-span-5 relative cursor-pointer"
+                            className="bg-white rounded-xl shadow-lg overflow-hidden col-span-1 lg:col-span-5 relative cursor-pointer"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             whileHover={{ y: -5 }}
                             onClick={() => openModal(presentations[currentPresentation])}
                         >
-                            <div className="relative bg-white p-6" style={{ overflow: 'hidden' }}>
-                                <div className="w-full h-[400px] overflow-hidden bg-white rounded-lg border border-gray-200">
+                            <div className="relative bg-white p-4 sm:p-6" style={{ overflow: 'hidden' }}>
+                                <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] overflow-hidden bg-white rounded-lg border border-gray-200">
                                     <iframe
                                         key={iframeKey}
                                         src={`${presentations[currentPresentation].pdfUrl}#page=${currentPage}&view=FitH&toolbar=0&navpanes=0`}
@@ -267,25 +269,27 @@ export default function Presentations() {
                                         }}
                                     />
                                 </div>
-                                <div className="absolute top-4 left-1/2 transform -translate-x-1/2 text-center">
-                                    <div className="text-gray-600 text-lg mb-2 animate-bounce font-semibold drop-shadow-md bg-white/80 px-3 py-1 rounded-full">
+                                <div className="absolute top-2 sm:top-4 left-1/2 transform -translate-x-1/2 text-center">
+                                    <div className="text-gray-600 text-xs sm:text-sm md:text-lg mb-2 animate-bounce 
+                                                  font-semibold drop-shadow-md bg-white/80 px-2 sm:px-3 py-1 rounded-full">
                                         Click to see
                                     </div>
                                 </div>
                             </div>
                         </motion.div>
 
-                        <div className="p-6 bg-white rounded-xl shadow-lg col-span-2">
-                            <h3 className="text-xl font-bold text-gray-800 mb-2">
+                        <div className="p-4 sm:p-6 bg-white rounded-xl shadow-lg col-span-1 lg:col-span-2">
+                            <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">
                                 {presentations[currentPresentation].title}
                             </h3>
-                            <p className="text-gray-600 mb-4">
+                            <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                                 {presentations[currentPresentation].description}
                             </p>
                             <a
                                 href={presentations[currentPresentation].pdfUrl}
                                 download
-                                className="inline-flex items-center bg-[#884830] text-white px-4 py-2 rounded-full shadow-md hover:bg-[#CE7857] transition-colors"
+                                className="inline-flex items-center bg-[#884830] text-white px-3 sm:px-4 py-2 
+                                         rounded-full shadow-md hover:bg-[#CE7857] transition-colors text-sm sm:text-base"
                             >
                                 <FontAwesomeIcon icon={faDownload} className="mr-2" />
                                 Download PDF
@@ -293,22 +297,25 @@ export default function Presentations() {
                         </div>
                     </div>
 
-                    <div className="flex justify-center mt-6">
+                    <div className="flex justify-center items-center mt-4 sm:mt-6 gap-2 sm:gap-4">
                         <motion.button
                             onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
-                            className="text-gray-600 hover:text-gray-800 disabled:text-gray-300 p-3 text-lg rounded-full disabled:cursor-not-allowed"
+                            className="text-gray-600 hover:text-gray-800 disabled:text-gray-300 
+                                     p-2 sm:p-3 text-base sm:text-lg rounded-full disabled:cursor-not-allowed"
                             disabled={currentPage === 1}
                             whileHover={{ scale: currentPage === 1 ? 1 : 1.1 }}
                             whileTap={{ scale: currentPage === 1 ? 1 : 0.9 }}
                         >
                             <FontAwesomeIcon icon={faChevronLeft} />
                         </motion.button>
-                        <span className="text-lg text-gray-600 min-w-[90px] text-center font-bold mx-4 my-2">
+                        <span className="text-sm sm:text-lg text-gray-600 min-w-[70px] sm:min-w-[90px] 
+                                        text-center font-bold mx-2 sm:mx-4 my-2">
                             {currentPage} / {presentations[currentPresentation].totalPages}
                         </span>
                         <motion.button
                             onClick={() => handlePageChange(Math.min(presentations[currentPresentation].totalPages, currentPage + 1))}
-                            className="text-gray-600 hover:text-gray-800 disabled:text-gray-300 p-3 text-lg rounded-full disabled:cursor-not-allowed"
+                            className="text-gray-600 hover:text-gray-800 disabled:text-gray-300 
+                                     p-2 sm:p-3 text-base sm:text-lg rounded-full disabled:cursor-not-allowed"
                             disabled={currentPage === presentations[currentPresentation].totalPages}
                             whileHover={{ scale: currentPage === presentations[currentPresentation].totalPages ? 1 : 1.1 }}
                             whileTap={{ scale: currentPage === presentations[currentPresentation].totalPages ? 1 : 0.9 }}
@@ -333,21 +340,22 @@ export default function Presentations() {
                                 exit={{ scale: 0.8, opacity: 0 }}
                                 onClick={(e) => e.stopPropagation()}
                             >
-                                <div className="flex justify-between items-center p-4 border-b">
-                                    <h3 className="text-lg font-semibold text-gray-800">
+                                <div className="flex justify-between items-center p-3 sm:p-4 border-b">
+                                    <h3 className="text-base sm:text-lg font-semibold text-gray-800">
                                         {modalPresentation.title}
                                     </h3>
                                     <button 
                                         onClick={closeModal} 
-                                        className="text-gray-600 hover:text-gray-800 text-xl font-bold px-3 py-1 rounded-full hover:bg-gray-100"
+                                        className="text-gray-600 hover:text-gray-800 text-lg sm:text-xl 
+                                                 font-bold px-2 sm:px-3 py-1 rounded-full hover:bg-gray-100"
                                     >
                                         ×
                                     </button>
                                 </div>
-                                <div className="p-4">
+                                <div className="p-2 sm:p-4">
                                     <iframe
                                         src={`${modalPresentation.pdfUrl}#view=FitH&toolbar=1&navpanes=1`}
-                                        className="w-full h-[70vh] border-none"
+                                        className="w-full h-[60vh] sm:h-[70vh] border-none"
                                         title={`${modalPresentation.title} - Full View`}
                                     />
                                 </div>
