@@ -1,49 +1,26 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPalette, faCode, faMagicWandSparkles, faArrowRight, faEye } from '@fortawesome/free-solid-svg-icons';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
 import ProjectsImgs from './ProjectsImgs';
 
 function Works() {
     const [isDetailsVisible, setIsDetailsVisible] = useState(false);
 
     return (
-        <section className="py-6 sm:py-8 md:py-10 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <section className="py-6 sm:py-8 md:py-10 px-0 sm:px-4 lg:px-8 relative overflow-hidden">
             
             <div className="max-w-6xl mx-auto relative">
-                {/* Main Title Section */}
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#884830] 
-                                mb-4 sm:mb-6 
-                                ml-0 sm:ml-4 md:ml-6 lg:ml-10" 
-                        style={{fontFamily: 'Acme'}}>
-                        My Works
-                    </h2>
-            
-
-                {/* Introduction Text */}
-                <motion.div 
-                    className="relative z-10 mb-8 sm:mb-12 md:mb-16"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.3 }}
-                >
-                    <p className="text-sm sm:text-base md:text-lg text-gray-700 px-2 sm:px-0">
-                        Explore my creative journey through design and development. Each project 
-                        represents a unique challenge and innovative solution.
-                    </p>
-                </motion.div>
-
                 {/* Featured Design Section */}
                 <div className="mb-12 sm:mb-16 md:mb-20">
-                    <motion.h3 
-                        className="text-xl sm:text-2xl font-bold text-[#884830] mb-6 sm:mb-8 
-                                  ml-0 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-24" 
+                    <motion.h2 
+                        className="text-2xl sm:text-3xl font-bold text-[#884830] mb-6 sm:mb-8" 
                         style={{fontFamily: 'Acme'}}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                     >
-                        Featured UI/UX Design
-                    </motion.h3>
+                        UI/UX Design
+                    </motion.h2>
 
                     {/* Project Card */}
                     <motion.div 

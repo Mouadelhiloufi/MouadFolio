@@ -1,68 +1,69 @@
-    import React from 'react';
-
-    function Hero() {
-        return (
-            <section className="hero mb-8 sm:mb-10 md:mb-14 px-4 sm:px-6 lg:px-8">
-                <h1 className="hero-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 
-                              absolute top-0 sm:top-[-40px] md:top-[-50px] lg:top-[-60px] 
-                              left-4 sm:left-8 md:left-12 lg:left-16 z-10">
-                    Hello
-                </h1>
-                <div className="hero-content bg-[#FFE4E1] rounded-xl sm:rounded-2xl 
-                               flex flex-col md:flex-row justify-between items-center 
-                               p-6 sm:p-8 md:p-10 lg:p-12 gap-6 md:gap-8">
-                    {/* Image - shown on mobile first, then on desktop */}
-                    <div className="hero-image flex-shrink-0 
-                                  w-full md:w-1/3 lg:w-1/4
-                                  flex justify-center md:justify-end
-                                  order-1 md:order-2">
-                        <img 
-                            src="/my.png" 
-                            className='w-auto h-auto max-w-[180px] max-h-[180px] 
-                                     sm:max-w-[200px] sm:max-h-[200px]
-                                     md:max-w-[250px] md:max-h-[250px] 
-                                     lg:max-w-[300px] lg:max-h-[300px]
-                                     object-contain' 
-                            alt="Aamir El Amiri" 
-                        />
+function Hero() {
+    return (
+        <section className="hero relative mt-12 sm:mt-16 lg:mt-20 mb-10 md:mb-14">
+            <h1 className="absolute -top-8 sm:-top-11 lg:-top-14 left-4 sm:left-8 lg:left-14 z-10 m-0
+                           text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-[#884830]"
+                style={{fontFamily: 'Acme'}}>
+                Hello
+            </h1>
+            <div className="bg-[#FFE4E1] rounded-3xl overflow-hidden
+                            flex flex-col md:flex-row items-center justify-between
+                            px-5 pt-12 pb-8 sm:px-8 sm:pt-16 md:p-12 lg:p-14 gap-6 md:gap-10">
+                <div className="flex-shrink-0 order-1 md:order-2 w-full md:w-auto flex justify-center md:justify-end">
+                    <div className="relative w-64 sm:w-72 md:w-80 lg:w-96 aspect-square">
+                        {/* Gradient circle behind the photo, head pops out above it */}
+                        <div className="absolute inset-x-[6%] bottom-0 aspect-square rounded-full
+                                        bg-gradient-to-br from-[#F1AA76] via-[#CE7857] to-[#884830] shadow-2xl"></div>
+                        <div className="absolute inset-x-[calc(6%-12px)] -bottom-3 aspect-square rounded-full
+                                        border-2 border-dashed border-[#884830]/40 animate-[spin_40s_linear_infinite]"></div>
+                        <div className="relative h-full w-[88%] mx-auto overflow-hidden rounded-b-full">
+                            <img
+                                src="/my.png"
+                                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[104%] w-auto max-w-none
+                                           drop-shadow-2xl transition-[height] duration-500 hover:h-[108%]"
+                                alt="Aamir El Amiri"
+                            />
+                        </div>
                     </div>
-                    <div className="hero-text max-w-full md:max-w-[50%] 
-                                   mx-auto md:mx-0 text-center md:text-left
-                                   order-2 md:order-1">
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
-                                     font-bold mb-2 sm:mb-3 md:mb-4" 
-                            style={{fontFamily: 'Acme'}}>
-                            I'm Aamir El Amiri
-                        </h2>
-                        <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl 
-                                     font-bold mb-3 sm:mb-4 md:mb-5" 
-                            style={{fontFamily: 'Acme'}}>
-                            A Full-Stack Developer
-                        </h3>
-                        <p className="text-sm sm:text-base md:text-lg 
-                                    text-[#473D3D] font-bold mb-4 sm:mb-6 md:mb-8
-                                    leading-relaxed">
-                            I love building efficient, scalable systems and crafting seamless
-                            user experiences across both frontend and backend technologies.
-                        </p>
-                        <a 
-                            href="/Aamir_El_Amiri_CV_2025.pdf" 
-                            className="cta-button inline-flex items-center justify-center
-                                     text-sm sm:text-base md:text-lg
-                                     px-4 sm:px-6 md:px-8 py-2 sm:py-3
-                                     border-2 border-[#343434] rounded-lg
-                                     hover:bg-[#343434] hover:text-white
-                                     transition-all duration-300" 
+                </div>
+                <div className="order-2 md:order-1 w-full md:max-w-[55%] text-center md:text-left">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#473D3D] mb-3"
+                        style={{fontFamily: 'Acme'}}>
+                        I'm Aamir El Amiri
+                    </h2>
+                    <p className="inline-block mb-4 sm:mb-5 px-4 py-1.5 rounded-full bg-[#884830] text-white
+                                  text-xs sm:text-sm lg:text-base font-semibold tracking-wide">
+                        Software Engineer · AI &amp; Automation
+                    </p>
+                    <p className="text-sm sm:text-base lg:text-lg text-[#473D3D] leading-relaxed mb-6 sm:mb-8">
+                        I build AI agents, REST APIs and data pipelines in Java, Python and
+                        JavaScript — from conversational agents on WhatsApp &amp; Instagram to RAG assistants in production.
+                    </p>
+                    <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 justify-center md:justify-start">
+                        <a
+                            href="/Aamir_El_Amiri_CV_2026.pdf"
+                            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl whitespace-nowrap
+                                       bg-[#343434] text-white font-semibold text-sm sm:text-base
+                                       hover:bg-[#884830] transition-all duration-300 shadow-lg active:scale-95"
                             download
                         >
-                            <span className="arrow mr-2">↓</span>
+                            <span>↓</span>
                             Download My CV
+                        </a>
+                        <a
+                            href="/contact"
+                            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl whitespace-nowrap
+                                       border-2 border-[#343434] text-[#343434] font-semibold text-sm sm:text-base
+                                       hover:bg-[#343434] hover:text-white transition-all duration-300 active:scale-95"
+                        >
+                            Contact Me
+                            <span>→</span>
                         </a>
                     </div>
                 </div>
-            </section>
-        );
-    }
+            </div>
+        </section>
+    );
+}
 
-    export default Hero;
-
+export default Hero;

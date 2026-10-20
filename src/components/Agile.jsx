@@ -6,14 +6,13 @@ function Agile() {
                               mb-6 sm:mb-8 
                               ml-0 sm:ml-4 md:ml-8 lg:ml-12 xl:ml-20" 
                     style={{fontFamily: 'Acme'}}>
-                    Agile Project Management
+                    How I Work
                 </h2>
 
                 <p className="text-sm sm:text-base md:text-lg text-[#343434] mb-8 sm:mb-10 md:mb-12 
                             px-2 sm:px-0">
-                    I embrace agile methodologies to deliver high-quality solutions efficiently. 
-                    My experience includes working with various agile frameworks and tools to ensure 
-                    smooth project delivery and team collaboration.
+                    I ship in short Agile iterations, automate everything that can be automated and keep
+                    production systems observable — so AI features reach users quickly and stay reliable.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
@@ -23,10 +22,10 @@ function Agile() {
                                 shadow-md transition-all duration-300 
                                 hover:shadow-[15px_0px_30px_-15px_rgba(136,72,48,0.3)]">
                         <h3 className="font-bold text-lg sm:text-xl text-center">
-                            Scrum Methodology
+                            Agile &amp; Scrum
                         </h3>
                         <p className="text-center text-xs sm:text-sm">
-                            Driving projects forward with agile principles
+                            Sprints, Jira &amp; GitHub workflows, close collaboration with business teams
                         </p>
                     </div>
 
@@ -36,10 +35,10 @@ function Agile() {
                                 shadow-md transition-all duration-300 
                                 hover:shadow-[0px_15px_30px_-15px_rgba(136,72,48,0.3)]">
                         <h3 className="font-bold text-lg sm:text-xl text-center">
-                            Collaboration Tools
+                            CI/CD &amp; Monitoring
                         </h3>
                         <p className="text-center text-xs sm:text-sm">
-                            Mastering Jira & GitHub workflows
+                            Docker, Jenkins, Airflow — observed with Prometheus, Grafana &amp; Loki
                         </p>
                     </div>
 
@@ -49,10 +48,10 @@ function Agile() {
                                 shadow-md transition-all duration-300 
                                 hover:shadow-[-15px_0px_30px_-15px_rgba(136,72,48,0.3)]">
                         <h3 className="font-bold text-lg sm:text-xl text-center">
-                            Workflow Automation
+                            AI-Assisted Development
                         </h3>
                         <p className="text-center text-xs sm:text-sm">
-                            Optimizing processes for faster delivery
+                            Claude Code, LLM tooling and agentic frameworks to ship faster
                         </p>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -78,13 +78,13 @@ export default function Contact() {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                     >
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#884830] mb-3 sm:mb-4" 
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#884830] mb-3 sm:mb-4" 
                             style={{fontFamily: 'Acme'}}>
                             Let's Create Something Amazing Together
-                        </h2>
+                        </h1>
                         <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4 sm:px-0">
-                            Whether you have a project in mind or just want to chat, I'm always excited 
-                            to connect with fellow creators and innovators.
+                            An AI agent to build, a data pipeline to automate or a role to discuss? I'm always
+                            happy to talk about AI, automation and software engineering.
                         </p>
                     </motion.div>
 
@@ -119,7 +119,7 @@ aamirelamiri3@gmail.com                                                </a>
                                             </div>
                                             <div>
                                                 <p className="opacity-75 text-sm">Location</p>
-                                                <p>Safi, Morocco</p>
+                                                <p>Casablanca, Morocco</p>
                                             </div>
                                         </div>
                                     </div>

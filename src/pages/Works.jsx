@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Works from "../components/works/works";
-import Websites from "../components/works/Websites";
+import Projects from "../components/works/Projects";
 import "../index.css";
 import { motion } from 'framer-motion';
 import StarAnimation from "../components/StarAnimation";
@@ -11,10 +11,10 @@ export default function WorksPage() {
         <>
             <div className="App relative">
                 <Header/>
-                <div className="relative">
+                <div className="relative overflow-x-clip">
                     <StarAnimation />
+                    <Projects/>
                     <Works/>
-                    <Websites/>
                 </div>
                 
                 <motion.button

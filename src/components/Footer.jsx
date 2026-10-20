@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
@@ -12,7 +12,7 @@ function Footer() {
                         Let's work together.
                     </h2>
                     <p className="text-sm sm:text-base md:text-lg">
-                        Let's work together to build something great.
+                        AI agents, RAG assistants, data pipelines — let's build something great.
                     </p>
                 </div>
 
@@ -30,13 +30,15 @@ function Footer() {
                     {/* Right Side */}
                     <div className="text-left sm:text-right">
                         <div className="mb-2 flex flex-wrap gap-1 sm:gap-0 text-sm sm:text-base">
-                            <a href="https://www.linkedin.com/in/aamirelamiri/" 
+                            <a href="https://www.linkedin.com/in/aamirelamiri/" target="_blank" rel="noopener noreferrer"
                                className="hover:underline">LinkedIn</a>
                             <span className="hidden sm:inline"> / </span>
-                            <a href="https://www.instagram.com/aamir_el_amiri" 
+                            <a href="https://www.instagram.com/aamir_el_amiri" target="_blank" rel="noopener noreferrer"
                                className="hover:underline">Instagram</a>
                             <span className="hidden sm:inline"> / </span>
-                            <a href="https://x.com/" className="hover:underline">Twitter</a>
+                            <a href="https://github.com/ISTIFANO" target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
+                            <span className="hidden sm:inline"> / </span>
+                            <a href="/Favorites" className="hover:underline">Favorites</a>
                         </div>
                         <a href="mailto:aamirelamiri3@gmail.com" 
                            className="hover:underline text-xs sm:text-sm md:text-base break-all">
@@ -79,7 +81,7 @@ function Footer() {
                             <FontAwesomeIcon icon={faEnvelope} size="lg" />
                         </a>
                     </div>
-                    <p className="mt-2 sm:mt-4">Aamir El Amiri</p>
+                    <p className="mt-2 sm:mt-4">© {new Date().getFullYear()} Aamir El Amiri · Software Engineer · AI &amp; Automation</p>
                 </div>
             </div>
         </section>

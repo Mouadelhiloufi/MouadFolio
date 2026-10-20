@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 function About() {
@@ -18,14 +17,12 @@ function About() {
                     </h2>
                     <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed 
                                  px-2 sm:px-0">
-                        I am Aamir El Amiri, a passionate Full-Stack Developer specializing in Java and Angular technologies. 
-                        Currently advancing my expertise at YouCode - UM6P, I bring a strong foundation in web development 
-                        with proficiency in creating dynamic websites using WordPress, HTML, CSS, JavaScript, and their 
-                        associated frameworks. My technical arsenal includes PHP, SQL, and MERISE modeling methodology, 
-                        complemented by experience in Spring Boot and Agile/Scrum methodologies. My goal is to design 
-                        efficient and aesthetically pleasing web solutions that meet specific client needs. I am always 
-                        seeking stimulating challenges and new opportunities to showcase my skills in both frontend and 
-                        backend development, delivering exceptional user experiences through innovation and technical excellence.
+                        I am Aamir El Amiri, a Software Engineer with hands-on experience building AI solutions, REST APIs
+                        and data pipelines in Java, Python and JavaScript. I design and deploy conversational AI agents
+                        (WhatsApp, Instagram) and a RAG-based assistant running in production. I learn fast — I went from
+                        frontend intern to Data &amp; AI Engineer in less than 3 years. My goal is to put my solid software
+                        engineering foundations and my AI experience to work in a Forward Deployed Engineering role.
+                        I actively explore emerging AI/LLM tools, agentic frameworks and modern AI-assisted development practices.
                     </p>
                 </div>
             </section>

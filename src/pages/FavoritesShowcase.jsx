@@ -18,6 +18,33 @@ import {
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
+const artists = [
+  {
+    name: "ISSAM",
+    genre: "Arabic Rap",
+    albums: ["Crystal"],
+    spotifyUrl: "https://open.spotify.com/intl-fr/artist/37lslcg6zP6eAQAONiYvWN?si=0Rl1DIZ9RUC8Zu9O8XkcdQ",
+    image: "./Issam.jpg",
+    albumImages: ["/crystal.jpg"],
+  },
+  {
+    name: "Shobee",
+    genre: "Hip-Hop/Rap",
+    albums: ["HOWLS", "NAAR"],
+    spotifyUrl: "https://open.spotify.com/intl-fr/artist/5Et8bRmkENeaA7SPwj1OxL?si=f84bOSAXQmGybXlB_PNHig",
+    image: "/Shobee.jpg",
+    albumImages: ["/howls.jpg", "/naar.jpg"],
+  },
+  {
+    name: "Madd",
+    genre: "Trap/Hip-Hop",
+    albums: ["SĒNSUS", "Black Rose"],
+    spotifyUrl: "https://open.spotify.com/intl-fr/artist/7DBIKXxSh2BMPqSN7UB4rS?si=hSJvAbDCSMu0EzkeKtippA",
+    image: "/madd.jpg",
+    albumImages: ["/sunsus.jpg", "/blackrose.jpg"],
+  },
+]
+
 export default function FavoritesShowcase() {
   const [activeSection, setActiveSection] = useState("music")
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -29,32 +56,7 @@ export default function FavoritesShowcase() {
     { id: "football", label: "Football", icon: Heart },
   ]
 
-  const artists = [
-    {
-      name: "ISSAM",
-      genre: "Arabic Rap",
-      albums: ["Crystal"],
-      spotifyUrl: "https://open.spotify.com/intl-fr/artist/37lslcg6zP6eAQAONiYvWN?si=0Rl1DIZ9RUC8Zu9O8XkcdQ",
-      image: "./Issam.jpg",
-      albumImages: ["/crystal.jpg"],
-    },
-    {
-      name: "Shobee",
-      genre: "Hip-Hop/Rap",
-      albums: ["HOWLS", "NAAR"],
-      spotifyUrl: "https://open.spotify.com/intl-fr/artist/5Et8bRmkENeaA7SPwj1OxL?si=f84bOSAXQmGybXlB_PNHig",
-      image: "/Shobee.jpg",
-      albumImages: ["/howls.jpg", "/naar.jpg"],
-    },
-    {
-      name: "Madd",
-      genre: "Trap/Hip-Hop",
-      albums: ["SĒNSUS", "Black Rose"],
-      spotifyUrl: "https://open.spotify.com/intl-fr/artist/7DBIKXxSh2BMPqSN7UB4rS?si=hSJvAbDCSMu0EzkeKtippA",
-      image: "/madd.jpg",
-      albumImages: ["/sunsus.jpg", "/blackrose.jpg"],
-    },
-  ]
+
 
   const snookerPlayers = [
     {
@@ -107,7 +109,7 @@ export default function FavoritesShowcase() {
           album: artist.albums[index],
         })),
       ),
-    [artists],
+    [],
   )
 
   // Auto-slide functionality for music section

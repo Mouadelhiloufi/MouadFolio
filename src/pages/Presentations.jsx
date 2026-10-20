@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight, faDownload, faBook } from '@fortawesome/free-solid-svg-icons';
@@ -365,15 +365,6 @@ export default function Presentations() {
                 </div>
             </motion.div>
             <Footer />
-            <style jsx>{`
-                .hide-scrollbar {
-                    -ms-overflow-style: none;
-                    scrollbar-width: none;
-                }
-                .hide-scrollbar::-webkit-scrollbar {
-                    display: none;
-                }
-            `}</style>
         </>
     );
 }
