@@ -72,7 +72,7 @@ export default function FavoritesShowcase() {
       name: "Mouad El Hiloufi",
       title: "BENITO",
       achievements: "0-time World Champion 😂",
-      image: "/WhatsApp%20Image%202026-10-23%20at%2014.40.33.jpeg",
+      image: "/mouad-snooker.jpeg",
       imagePosition: "center 20%",
       stats: "40+ Century Breaks",
       specialty: "Fastest 147 Break",

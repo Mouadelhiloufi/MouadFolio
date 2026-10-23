@@ -134,7 +134,7 @@ En cas d'erreur, ouvrez la console du navigateur (F12) : le détail s'affiche ap
   - `src/components/Footer.jsx` — ajouter un lien/icône `faLinkedin` à côté de GitHub ;
   - `src/pages/Contact.jsx` — ajouter `{ icon: faLinkedin, url: '...' }` dans la liste « Retrouvez-moi sur » (et l'import `faLinkedin`).
 - [ ] **URL du site** dans `index.html` : après le premier déploiement, remplacer `og:image` par l'URL complète
-  (ex. `https://mouadfolio.vercel.app/mouad.jpg`) et ajouter
+  (ex. `https://mouadfolio.vercel.app/mouad-snooker.jpeg`) et ajouter
   `<link rel="canonical" href="https://mouadfolio.vercel.app/" />` + `<meta property="og:url" ...>`,
   sinon l'aperçu LinkedIn/WhatsApp n'affiche pas la photo.
 - [ ] **Localisation** : la page contact indique « Safi, Maroc » (déduit de YouCode Safi) — à corriger si besoin dans `src/pages/Contact.jsx`.
@@ -157,5 +157,5 @@ En cas d'erreur, ouvrez la console du navigateur (F12) : le détail s'affiche ap
 | Langues | `src/components/Interests.jsx` |
 | Email / GitHub (pied de page) | `src/components/Footer.jsx` |
 | CV téléchargeable | `public/Mouad_El_Hiloufi_CV.pdf` (garder ce nom) |
-| Photo | `public/mouad.jpg` — favicon : `public/logo.png` |
+| Photo | `public/mouad-snooker.jpeg` — favicon : `public/logo.png` |
 | Titre & description Google | `index.html` |
