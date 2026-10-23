@@ -16,7 +16,7 @@ function Hero() {
                                         animate-[spin_40s_linear_infinite]"></div>
                         <div className="absolute inset-0 rounded-full p-2 bg-gradient-to-br from-[#F1AA76] via-[#CE7857] to-[#884830] shadow-2xl">
                             <img
-                                src="/mouad-snooker.jpeg"
+                                src="/mouad.jpg"
                                 className="w-full h-full rounded-full object-cover object-top
                                            transition-transform duration-500 hover:scale-[1.03]"
                                 alt="Mouad El Hiloufi"
