@@ -6,7 +6,7 @@ Portfolio de **Mouad El Hiloufi**, développeur Full Stack (Java / Spring Boot, 
 
 | Route | Contenu |
 |-------|---------|
-| `/` | Présentation, formation, expérience, compétences, méthodes de travail, langues et centres d'intérêt |
+| `/` | Présentation, formation, expérience, compétences, méthodes de travail, langues |
 | `/works` | Projets GitHub filtrables (Java / Spring, Laravel, PHP, Front-end) |
 | `/contact` | Formulaire de contact (EmailJS) |
 | `/Favorites` | Favoris : musique, snooker, football (`src/pages/FavoritesShowcase.jsx`) |
@@ -154,7 +154,7 @@ En cas d'erreur, ouvrez la console du navigateur (F12) : le détail s'affiche ap
 | Formation | `src/components/Education.jsx` |
 | Expérience | `src/components/Experience.jsx` |
 | Compétences | `src/components/Skills.jsx` (tableau `skillGroups`) |
-| Langues & centres d'intérêt | `src/components/Interests.jsx` |
+| Langues | `src/components/Interests.jsx` |
 | Email / GitHub (pied de page) | `src/components/Footer.jsx` |
 | CV téléchargeable | `public/Mouad_El_Hiloufi_CV.pdf` (garder ce nom) |
 | Photo | `public/mouad.jpg` — favicon : `public/logo.png` |
