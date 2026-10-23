@@ -6,13 +6,13 @@ function Agile() {
                               mb-6 sm:mb-8 
                               ml-0 sm:ml-4 md:ml-8 lg:ml-12 xl:ml-20" 
                     style={{fontFamily: 'Acme'}}>
-                    How I Work
+                    Ma façon de travailler
                 </h2>
 
                 <p className="text-sm sm:text-base md:text-lg text-[#343434] mb-8 sm:mb-10 md:mb-12 
                             px-2 sm:px-0">
-                    I ship in short Agile iterations, automate everything that can be automated and keep
-                    production systems observable — so AI features reach users quickly and stay reliable.
+                    Je travaille en équipe avec la méthode Scrum, je modélise avant de coder et je versionne tout
+                    mon travail pour livrer des applications fiables et faciles à faire évoluer.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
@@ -25,7 +25,7 @@ function Agile() {
                             Agile &amp; Scrum
                         </h3>
                         <p className="text-center text-xs sm:text-sm">
-                            Sprints, Jira &amp; GitHub workflows, close collaboration with business teams
+                            Sprints, user stories et suivi des tâches avec Jira et Trello
                         </p>
                     </div>
 
@@ -35,10 +35,10 @@ function Agile() {
                                 shadow-md transition-all duration-300 
                                 hover:shadow-[0px_15px_30px_-15px_rgba(136,72,48,0.3)]">
                         <h3 className="font-bold text-lg sm:text-xl text-center">
-                            CI/CD &amp; Monitoring
+                            Analyse &amp; conception
                         </h3>
                         <p className="text-center text-xs sm:text-sm">
-                            Docker, Jenkins, Airflow — observed with Prometheus, Grafana &amp; Loki
+                            Diagrammes UML (cas d&apos;utilisation, classes) et modélisation Merise
                         </p>
                     </div>
 
@@ -48,10 +48,10 @@ function Agile() {
                                 shadow-md transition-all duration-300 
                                 hover:shadow-[-15px_0px_30px_-15px_rgba(136,72,48,0.3)]">
                         <h3 className="font-bold text-lg sm:text-xl text-center">
-                            AI-Assisted Development
+                            Collaboration &amp; versioning
                         </h3>
                         <p className="text-center text-xs sm:text-sm">
-                            Claude Code, LLM tooling and agentic frameworks to ship faster
+                            Git et GitHub au quotidien, sous Linux comme sous Windows
                         </p>
                     </div>
                 </div>

@@ -13,16 +13,16 @@ function About() {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#884830] mb-4 sm:mb-6 
                                   ml-0 sm:ml-4 md:ml-6 lg:ml-10" 
                         style={{fontFamily: 'Acme'}}>
-                        About me
+                        À propos de moi
                     </h2>
                     <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed 
                                  px-2 sm:px-0">
-                        I am Aamir El Amiri, a Software Engineer with hands-on experience building AI solutions, REST APIs
-                        and data pipelines in Java, Python and JavaScript. I design and deploy conversational AI agents
-                        (WhatsApp, Instagram) and a RAG-based assistant running in production. I learn fast — I went from
-                        frontend intern to Data &amp; AI Engineer in less than 3 years. My goal is to put my solid software
-                        engineering foundations and my AI experience to work in a Forward Deployed Engineering role.
-                        I actively explore emerging AI/LLM tools, agentic frameworks and modern AI-assisted development practices.
+                        Je m&apos;appelle Mouad El Hiloufi, développeur Full Stack en formation à YouCode Safi (UM6P).
+                        Après deux années d&apos;économie à l&apos;Université Cadi Ayyad, j&apos;ai choisi le développement web et
+                        réalisé plus de 20 projets : API REST en Java / Spring, applications Laravel, PHP MVC et interfaces
+                        JavaScript. En stage chez IADIBSP à Marrakech, j&apos;ai développé une plateforme de mémorisation du Coran
+                        avec Spring Boot, React et Keycloak. Je travaille en méthode Scrum, je conçois avec UML et Merise,
+                        et j&apos;aime écrire un code propre et bien structuré.
                     </p>
                 </div>
             </section>

@@ -2,8 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Works from '../pages/Works';
 import Contact from '../pages/Contact';
-import Presentations from '../pages/Presentations';
-import FavoritesShowcase from '../pages/FavoritesShowcase'
+
 function Router() {
     return (
         <BrowserRouter>
@@ -11,9 +10,6 @@ function Router() {
                 <Route path="/" element={<Home />} />
                 <Route path="/works" element={<Works />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/presentations" element={<Presentations />} />
-<Route path="/Favorites" element={<FavoritesShowcase />} />
-
             </Routes>
         </BrowserRouter>
     );

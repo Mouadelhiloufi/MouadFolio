@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faPaperPlane, faStar, faCheck, faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -45,7 +45,7 @@ export default function Contact() {
             if (result.text === 'OK') {
                 setStatus({
                     type: 'success',
-                    message: 'Message sent successfully! I will get back to you soon.'
+                    message: 'Message envoyé ! Je vous répondrai très vite.'
                 });
                 setFormData({
                     name: '',
@@ -57,7 +57,7 @@ export default function Contact() {
         } catch (error) {
             setStatus({
                 type: 'error',
-                message: 'Oops! Something went wrong. Please try again later.'
+                message: 'Oups ! Une erreur est survenue. Réessayez plus tard ou écrivez-moi par email.'
             });
             console.error('EmailJS Error:', error);
         } finally {
@@ -80,11 +80,11 @@ export default function Contact() {
                     >
                         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#884830] mb-3 sm:mb-4" 
                             style={{fontFamily: 'Acme'}}>
-                            Let's Create Something Amazing Together
+                            Construisons quelque chose ensemble
                         </h1>
                         <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4 sm:px-0">
-                            An AI agent to build, a data pipeline to automate or a role to discuss? I'm always
-                            happy to talk about AI, automation and software engineering.
+                            Une offre de stage, un projet web ou une simple question ? Écrivez-moi, je réponds
+                            rapidement.
                         </p>
                     </motion.div>
 
@@ -101,7 +101,7 @@ export default function Contact() {
                             <div className="grid lg:grid-cols-2">
                                 {/* Left Side - Contact Info */}
                                 <div className="bg-gradient-to-br from-[#884830] to-[#CE7857] p-6 sm:p-8 md:p-12 text-white">
-                                    <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">Let's Connect</h3>
+                                    <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">Restons en contact</h3>
                                     <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-12">
                                         <div className="flex items-center gap-4">
                                             <div className="bg-white/10 p-3 rounded-lg">
@@ -109,8 +109,9 @@ export default function Contact() {
                                             </div>
                                             <div>
                                                 <p className="opacity-75 text-sm">Email</p>
-                                                <a href="mailto:aamirelamiri3@gmail.com" className="hover:underline">
-aamirelamiri3@gmail.com                                                </a>
+                                                <a href="mailto:mouad.elhiloufi4@gmail.com" className="hover:underline break-all">
+                                                    mouad.elhiloufi4@gmail.com
+                                                </a>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-4">
@@ -118,19 +119,17 @@ aamirelamiri3@gmail.com                                                </a>
                                                 <FontAwesomeIcon icon={faLocationDot} className="w-6 h-6" />
                                             </div>
                                             <div>
-                                                <p className="opacity-75 text-sm">Location</p>
-                                                <p>Casablanca, Morocco</p>
+                                                <p className="opacity-75 text-sm">Localisation</p>
+                                                <p>Safi, Maroc</p>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div>
-                                        <p className="text-sm opacity-75 mb-4">Find me on</p>
+                                        <p className="text-sm opacity-75 mb-4">Retrouvez-moi sur</p>
                                         <div className="flex gap-4">
                                             {[
-                                                { icon: faLinkedin, url: 'https://www.linkedin.com/in/aamirelamiri/' },
-                                                { icon: faGithub, url: 'https://github.com/ISTIFANO' },
-                                                { icon: faInstagram, url: 'https://www.instagram.com/aamir_el_amiri/' }
+                                                { icon: faGithub, url: 'https://github.com/Mouadelhiloufi' }
                                             ].map((social, index) => (
                                                 <motion.a
                                                     key={index}
@@ -178,14 +177,14 @@ aamirelamiri3@gmail.com                                                </a>
                                                     name="name"
                                                     value={formData.name}
                                                     onChange={handleChange}
-                                                    placeholder="Your Name"
+                                                    placeholder="Votre nom"
                                                     className="w-full px-4 py-3 rounded-xl bg-[#FFE5DD]/10 border-2 border-[#884830]/20
                                                              focus:border-[#884830] transition-all duration-300 peer placeholder-transparent
                                                              hover:border-[#884830]/40"
                                                     required
                                                 />
                                                 <label className="absolute left-4 -top-2.5 bg-white px-2 text-sm text-[#884830]">
-                                                    Name
+                                                    Nom
                                                 </label>
                                             </div>
                                             <div className="relative col-span-1 sm:col-span-2">
@@ -194,7 +193,7 @@ aamirelamiri3@gmail.com                                                </a>
                                                     name="email"
                                                     value={formData.email}
                                                     onChange={handleChange}
-                                                    placeholder="Your Email"
+                                                    placeholder="Votre email"
                                                     className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-xl bg-[#FFE5DD]/10 border-2 border-[#884830]/20
                                                              focus:border-[#884830] transition-all duration-300 peer placeholder-transparent
                                                              hover:border-[#884830]/40 text-sm sm:text-base"
@@ -212,14 +211,14 @@ aamirelamiri3@gmail.com                                                </a>
                                                 name="subject"
                                                 value={formData.subject}
                                                 onChange={handleChange}
-                                                placeholder="Subject"
+                                                placeholder="Sujet"
                                                 className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-xl bg-[#FFE5DD]/10 border-2 border-[#884830]/20
                                                          focus:border-[#884830] transition-all duration-300 peer placeholder-transparent
                                                          hover:border-[#884830]/40 text-sm sm:text-base"
                                                 required
                                             />
                                             <label className="absolute left-3 sm:left-4 -top-2.5 bg-white px-2 text-xs sm:text-sm text-[#884830]">
-                                                Subject
+                                                Sujet
                                             </label>
                                         </div>
 
@@ -228,7 +227,7 @@ aamirelamiri3@gmail.com                                                </a>
                                                 name="message"
                                                 value={formData.message}
                                                 onChange={handleChange}
-                                                placeholder="Your Message"
+                                                placeholder="Votre message"
                                                 rows="4"
                                                 className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-xl bg-[#FFE5DD]/10 border-2 border-[#884830]/20
                                                          focus:border-[#884830] transition-all duration-300 resize-none peer placeholder-transparent
@@ -251,7 +250,7 @@ aamirelamiri3@gmail.com                                                </a>
                                             whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
                                             disabled={isSubmitting}
                                         >
-                                            <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                                            <span>{isSubmitting ? 'Envoi...' : 'Envoyer le message'}</span>
                                             <FontAwesomeIcon 
                                                 icon={faPaperPlane} 
                                                 className={`transform transition-transform ${

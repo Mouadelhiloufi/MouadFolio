@@ -32,5 +32,3 @@ dist-ssr
 *.webm
 *.zip
 *.rar
-# Videos the site actually uses
-!public/0615.mp4

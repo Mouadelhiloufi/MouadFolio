@@ -1,6 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+const GITHUB = 'https://github.com/Mouadelhiloufi';
+const EMAIL = 'mouad.elhiloufi4@gmail.com';
 
 function Footer() {
     return (
@@ -9,40 +12,32 @@ function Footer() {
                 {/* Main Content */}
                 <div className="mb-12 sm:mb-16 md:mb-20">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-3">
-                        Let's work together.
+                        Travaillons ensemble.
                     </h2>
                     <p className="text-sm sm:text-base md:text-lg">
-                        AI agents, RAG assistants, data pipelines — let's build something great.
+                        Un stage, un projet web ou une collaboration ? Je suis disponible pour en discuter.
                     </p>
                 </div>
 
                 {/* Contact Links */}
-                <div className="flex flex-col sm:flex-row justify-between items-start 
+                <div className="flex flex-col sm:flex-row justify-between items-start
                                sm:items-center gap-4 sm:gap-0 mb-12 sm:mb-16 md:mb-20">
                     {/* Left Side */}
                     <div className="flex items-center space-x-2">
                         <span>→</span>
                         <a href="/contact" className="hover:underline text-sm sm:text-base">
-                            Say Hello
+                            Me contacter
                         </a>
                     </div>
 
                     {/* Right Side */}
                     <div className="text-left sm:text-right">
-                        <div className="mb-2 flex flex-wrap gap-1 sm:gap-0 text-sm sm:text-base">
-                            <a href="https://www.linkedin.com/in/aamirelamiri/" target="_blank" rel="noopener noreferrer"
-                               className="hover:underline">LinkedIn</a>
-                            <span className="hidden sm:inline"> / </span>
-                            <a href="https://www.instagram.com/aamir_el_amiri" target="_blank" rel="noopener noreferrer"
-                               className="hover:underline">Instagram</a>
-                            <span className="hidden sm:inline"> / </span>
-                            <a href="https://github.com/ISTIFANO" target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
-                            <span className="hidden sm:inline"> / </span>
-                            <a href="/Favorites" className="hover:underline">Favorites</a>
+                        <div className="mb-2 text-sm sm:text-base">
+                            <a href={GITHUB} target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
                         </div>
-                        <a href="mailto:aamirelamiri3@gmail.com" 
+                        <a href={`mailto:${EMAIL}`}
                            className="hover:underline text-xs sm:text-sm md:text-base break-all">
-                            aamirelamiri3@gmail.com
+                            {EMAIL}
                         </a>
                     </div>
                 </div>
@@ -50,38 +45,24 @@ function Footer() {
                 {/* Bottom Text */}
                 <div className="text-center text-xs sm:text-sm">
                     <div className="flex justify-center space-x-3 sm:space-x-4 mb-3 sm:mb-4">
-                        <a 
-                            href="https://www.linkedin.com/in/aamirelamiri/" 
-                            target="_blank" 
+                        <a
+                            href={GITHUB}
+                            target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white hover:text-gray-300 transition-colors"
-                        >
-                            <FontAwesomeIcon icon={faLinkedin} size="lg" />
-                        </a>
-                        <a 
-                            href="https://github.com/ISTIFANO" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
+                            aria-label="GitHub"
                             className="text-white hover:text-gray-300 transition-colors"
                         >
                             <FontAwesomeIcon icon={faGithub} size="lg" />
                         </a>
-                        <a 
-                            href="https://www.instagram.com/aamir_el_amiri" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-white hover:text-gray-300 transition-colors"
-                        >
-                            <FontAwesomeIcon icon={faInstagram} size="lg" />
-                        </a>
-                        <a 
-                            href="mailto:aamirelamiri3@gmail.com" 
+                        <a
+                            href={`mailto:${EMAIL}`}
+                            aria-label="Email"
                             className="text-white hover:text-gray-300 transition-colors"
                         >
                             <FontAwesomeIcon icon={faEnvelope} size="lg" />
                         </a>
                     </div>
-                    <p className="mt-2 sm:mt-4">© {new Date().getFullYear()} Aamir El Amiri · Software Engineer · AI &amp; Automation</p>
+                    <p className="mt-2 sm:mt-4">© {new Date().getFullYear()} Mouad El Hiloufi · Développeur Full Stack</p>
                 </div>
             </div>
         </section>

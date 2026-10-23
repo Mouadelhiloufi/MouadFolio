@@ -1,6 +1,5 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Works from "../components/works/works";
 import Projects from "../components/works/Projects";
 import "../index.css";
 import { motion } from 'framer-motion';
@@ -14,7 +13,6 @@ export default function WorksPage() {
                 <div className="relative overflow-x-clip">
                     <StarAnimation />
                     <Projects/>
-                    <Works/>
                 </div>
                 
                 <motion.button
@@ -27,7 +25,7 @@ export default function WorksPage() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1 }}
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                    aria-label="Scroll to top"
+                    aria-label="Retour en haut"
                 >
                     ↑
                 </motion.button>

@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
 
 const links = [
-    { href: '/#about', label: 'About' },
-    { href: '/works', label: 'Works' },
-    { href: '/presentations', label: 'Presentations' },
+    { href: '/#about', label: 'À propos' },
+    { href: '/works', label: 'Projets' },
     { href: '/contact', label: 'Contact' },
-    { href: '/Favorites', label: 'Favorites' },
 ];
 
 export default function Header() {
@@ -34,10 +32,10 @@ export default function Header() {
                 <a href="/" className="flex flex-col leading-tight min-w-0 group">
                     <span className="text-base sm:text-lg font-bold text-[#473D3D] group-hover:text-[#884830] transition-colors duration-300"
                           style={{fontFamily: 'Acme'}}>
-                        Aamir El Amiri
+                        Mouad El Hiloufi
                     </span>
                     <span className="text-[11px] sm:text-xs md:text-sm text-[#884830] truncate">
-                        Software Engineer · AI &amp; Automation
+                        Développeur Full Stack
                     </span>
                 </a>
 
@@ -45,7 +43,7 @@ export default function Header() {
                     className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full bg-[#473D3D] text-white text-lg
                                focus:outline-none focus:ring-2 focus:ring-[#884830] focus:ring-offset-2 transition-transform duration-300 active:scale-90"
                     onClick={() => setIsOpen(!isOpen)}
-                    aria-label="Toggle menu"
+                    aria-label="Ouvrir le menu"
                     aria-expanded={isOpen}
                 >
                     {isOpen ? '✕' : '☰'}

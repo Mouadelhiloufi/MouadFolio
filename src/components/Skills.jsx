@@ -1,12 +1,10 @@
 const skillGroups = [
-    { title: 'Backend & APIs', items: ['Java', 'Spring Boot', 'Python', 'FastAPI', 'NestJS', 'Laravel', 'REST API', 'OAuth 2.0', 'Webhooks'] },
-    { title: 'AI / LLM / Automation', items: ['RAG', 'LangChain', 'LLM Integration', 'AI Agents', 'ChromaDB', 'PyTorch', 'Scikit-learn', 'YOLO'] },
-    { title: 'API Integration', items: ['WhatsApp Business API', 'Instagram API', 'PrestaShop', 'Shopify', 'WooCommerce'] },
-    { title: 'Data Engineering', items: ['Apache Airflow', 'Apache Spark', 'PySpark', 'Power BI', 'Pandas', 'ETL Pipelines'] },
-    { title: 'Frontend', items: ['React', 'Angular', 'Next.js', 'Tailwind CSS'] },
-    { title: 'Databases', items: ['PostgreSQL', 'MongoDB', 'MySQL', 'SQLite', 'ChromaDB (vector DB)'] },
-    { title: 'Cloud / DevOps', items: ['Azure', 'Docker', 'Jenkins', 'Prometheus', 'Grafana', 'Loki'] },
-    { title: 'Tools', items: ['Git/GitHub', 'Claude Code', 'Maven', 'JUnit', 'Swagger/OpenAPI'] },
+    { title: 'Front-end', items: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap', 'Tailwind CSS', 'Blade'] },
+    { title: 'Back-end', items: ['Java', 'Spring Boot', 'Spring MVC', 'Jakarta EE', 'PHP', 'Laravel', 'SQL'] },
+    { title: 'Bases de données', items: ['PostgreSQL', 'MySQL', 'JPA / Hibernate'] },
+    { title: 'Analyse et conception', items: ['UML', 'Merise'] },
+    { title: 'Gestion de projet', items: ['Scrum', 'Jira', 'Trello'] },
+    { title: 'Outils & systèmes', items: ['Git', 'GitHub', 'Docker', 'Linux', 'Windows'] },
 ];
 
 const colors = ['bg-[#884830]', 'bg-[#473D3D]', 'bg-[#C89F66]'];
@@ -17,14 +15,13 @@ function Skills() {
  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#CE7857] mb-6 sm:mb-8
                 ml-0 sm:ml-4 md:ml-8 lg:ml-12 xl:ml-20"
      style={{fontFamily: 'Acme'}}>
- Skills
+ Compétences techniques
  </h2>
 
  <div className="max-w-6xl mx-auto">
  <p className="text-sm sm:text-base md:text-lg text-[#343434] mb-8 sm:mb-10 md:mb-12
               px-2 sm:px-0">
- From backend APIs and AI agents to data pipelines and monitoring — here is the stack I use to build
- and ship production systems.
+ Les technologies que j&apos;utilise au quotidien pour concevoir, développer et livrer des applications web complètes.
  </p>
 
  {skillGroups.map((group) => (
