@@ -46,7 +46,7 @@ const artists = [
 ]
 
 export default function FavoritesShowcase() {
-  const [activeSection, setActiveSection] = useState("music")
+  const [activeSection, setActiveSection] = useState("football")
   const [currentSlide, setCurrentSlide] = useState(0)
   const intervalRef = useRef(null)
 
@@ -80,22 +80,22 @@ export default function FavoritesShowcase() {
 
   const footballers = [
     {
-      name: "Alessandro Del Piero",
-      position: "Forward",
-      club: "Juventus Legend",
-      image: "https://i.eurosport.com/2012/03/25/824345-20542458-2560-1440.jpg",
-      achievements: "World Cup Winner 2006",
-      goals: "290+ Goals",
-      years: "1993-2012",
+      name: "Kaká",
+      position: "Attacking Midfielder",
+      club: "Milan Legend",
+      image: "/a7e6280c61ff034fecc98313413907cc.jpg",
+      achievements: "Ballon d'Or Winner 2007",
+      goals: "104+ Goals",
+      years: "2003-2009",
     },
     {
-      name: "Gianluigi Buffon",
-      position: "Goalkeeper",
-      club: "Juventus Legend",
-      image: "https://th.bing.com/th/id/OIP.ouRm0Aa8I7R5rlGSX8KbvgHaGq?rs=1&pid=ImgDetMain&cb=idpwebpc1",
-      achievements: "World Cup Winner 2006",
-      goals: "685+ Clean Sheets",
-      years: "2001-2018",
+      name: "Andriy Shevchenko",
+      position: "Forward",
+      club: "Milan Legend",
+      image: "/cda37f38f74375dabef7bbde4e993cce.jpg",
+      achievements: "Ballon d'Or Winner 2004",
+      goals: "175+ Goals",
+      years: "1999-2006",
     },
   ]
 
@@ -401,7 +401,7 @@ export default function FavoritesShowcase() {
                 <p className="text-lg text-gray-600 max-w-xl mx-auto">Icons who defined an era of beautiful football</p>
               </div>
 
-              {/* Juventus Banner */}
+              {/* AC Milan Banner */}
               <div className="relative mb-12 overflow-hidden">
                 <div className="bg-gradient-to-r from-black via-white to-black p-8 rounded-3xl shadow-2xl relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/10"></div>
@@ -412,20 +412,20 @@ export default function FavoritesShowcase() {
                       </div>
                       <h3 className="text-5xl font-bold">
                         <span className="bg-gradient-to-r from-black to-gray-800 bg-clip-text text-transparent">
-                          JUVENTUS
+                          AC MILAN
                         </span>
                       </h3>
                       <div className="w-16 h-16 bg-white border-4 border-black rounded-full flex items-center justify-center">
                         <span className="text-black font-bold text-2xl">FC</span>
                       </div>
                     </div>
-                    <p className="text-gray-700 text-xl font-semibold mb-4">Fino Alla Fine - Until The End</p>
+                    <p className="text-gray-700 text-xl font-semibold mb-4">Sempre Milan</p>
                     <div className="flex justify-center gap-4 flex-wrap">
                       <div className="bg-black text-white px-6 py-3 rounded-full shadow-lg">
-                        <span className="font-bold">⚪⚫ La Vecchia Signora ⚫⚪</span>
+                        <span className="font-bold">Rossoneri</span>
                       </div>
                       <div className="bg-white border-2 border-black text-black px-6 py-3 rounded-full shadow-lg">
-                        <span className="font-bold">🏆 36 Serie A Titles</span>
+                        <span className="font-bold">🏆 19 Serie A Titles</span>
                       </div>
                     </div>
                   </div>
@@ -450,7 +450,7 @@ export default function FavoritesShowcase() {
                           LEGEND
                         </div>
                         <div className="absolute top-4 left-4 bg-white text-black px-3 py-1 rounded-full text-xs font-bold border-2 border-black">
-                          JUVE
+                          MILAN
                         </div>
                         <div className="absolute bottom-6 left-6 text-white">
                           <h3 className="text-3xl font-bold mb-2">{player.name}</h3>
