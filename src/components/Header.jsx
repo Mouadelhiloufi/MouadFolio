@@ -4,6 +4,7 @@ const links = [
     { href: '/#about', label: 'À propos' },
     { href: '/works', label: 'Projets' },
     { href: '/contact', label: 'Contact' },
+    { href: '/Favorites', label: 'Favoris' },
 ];
 
 export default function Header() {
