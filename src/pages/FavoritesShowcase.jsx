@@ -84,6 +84,7 @@ export default function FavoritesShowcase() {
       position: "Attacking Midfielder",
       club: "Milan Legend",
       image: "/a7e6280c61ff034fecc98313413907cc.jpg",
+      imagePosition: "center top",
       achievements: "Ballon d'Or Winner 2007",
       goals: "104+ Goals",
       years: "2003-2009",
@@ -93,6 +94,7 @@ export default function FavoritesShowcase() {
       position: "Forward",
       club: "Milan Legend",
       image: "/cda37f38f74375dabef7bbde4e993cce.jpg",
+      imagePosition: "center 25%",
       achievements: "Ballon d'Or Winner 2004",
       goals: "175+ Goals",
       years: "1999-2006",
@@ -443,6 +445,7 @@ export default function FavoritesShowcase() {
                           src={player.image || "/placeholder.svg"}
                           alt={player.name}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                          style={{ objectPosition: player.imagePosition || "center" }}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div className="absolute top-4 right-4 bg-gradient-to-r from-black to-gray-800 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-2">
