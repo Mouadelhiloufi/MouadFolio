@@ -405,28 +405,28 @@ export default function FavoritesShowcase() {
 
               {/* AC Milan Banner */}
               <div className="relative mb-12 overflow-hidden">
-                <div className="bg-gradient-to-r from-black via-white to-black p-8 rounded-3xl shadow-2xl relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/10"></div>
+                <div className="bg-gradient-to-r from-black via-red-700 to-black p-8 rounded-3xl shadow-2xl relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-red-500/20 to-black/10"></div>
                   <div className="text-center relative z-10">
                     <div className="flex justify-center items-center gap-4 mb-4">
-                      <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center">
-                        <span className="text-white font-bold text-2xl">J</span>
+                      <div className="w-16 h-16 bg-red-700 rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-2xl">M</span>
                       </div>
                       <h3 className="text-5xl font-bold">
-                        <span className="bg-gradient-to-r from-black to-gray-800 bg-clip-text text-transparent">
+                        <span className="text-white">
                           AC MILAN
                         </span>
                       </h3>
-                      <div className="w-16 h-16 bg-white border-4 border-black rounded-full flex items-center justify-center">
-                        <span className="text-black font-bold text-2xl">FC</span>
+                      <div className="w-16 h-16 bg-red-700 border-4 border-white rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-2xl">FC</span>
                       </div>
                     </div>
-                    <p className="text-gray-700 text-xl font-semibold mb-4">Sempre Milan</p>
+                    <p className="text-white text-xl font-semibold mb-4">Sempre Milan</p>
                     <div className="flex justify-center gap-4 flex-wrap">
                       <div className="bg-black text-white px-6 py-3 rounded-full shadow-lg">
                         <span className="font-bold">Rossoneri</span>
                       </div>
-                      <div className="bg-white border-2 border-black text-black px-6 py-3 rounded-full shadow-lg">
+                      <div className="bg-red-700 border-2 border-white text-white px-6 py-3 rounded-full shadow-lg">
                         <span className="font-bold">🏆 19 Serie A Titles</span>
                       </div>
                     </div>
