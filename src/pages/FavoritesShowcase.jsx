@@ -69,10 +69,11 @@ export default function FavoritesShowcase() {
       specialty: "Fastest 147 Break",
     },
     {
-      name: "Aamir El Amiri",
-      title: "ISTIFANO",
+      name: "Mouad El Hiloufi",
+      title: "BENITO",
       achievements: "0-time World Champion 😂",
-      image: "/snokerimgforAamiri.png",
+      image: "/WhatsApp%20Image%202026-10-23%20at%2014.40.33.jpeg",
+      imagePosition: "center 20%",
       stats: "40+ Century Breaks",
       specialty: "Fastest 147 Break",
     },
@@ -347,6 +348,7 @@ export default function FavoritesShowcase() {
                           src={player.image || "/placeholder.svg"}
                           alt={player.name}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                          style={{ objectPosition: player.imagePosition || "center" }}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div className="absolute top-4 right-4 bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
