@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const GITHUB = 'https://github.com/Mouadelhiloufi';
+const LINKEDIN = 'https://www.linkedin.com/in/mouad-el-hiloufi';
 const EMAIL = 'mouad.elhiloufi4@gmail.com';
 
 function Footer() {
@@ -32,8 +33,9 @@ function Footer() {
 
                     {/* Right Side */}
                     <div className="text-left sm:text-right">
-                        <div className="mb-2 text-sm sm:text-base">
+                        <div className="flex gap-4 mb-2 text-sm sm:text-base">
                             <a href={GITHUB} target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
+                            <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" className="hover:underline">LinkedIn</a>
                         </div>
                         <a href={`mailto:${EMAIL}`}
                            className="hover:underline text-xs sm:text-sm md:text-base break-all">
@@ -53,6 +55,15 @@ function Footer() {
                             className="text-white hover:text-gray-300 transition-colors"
                         >
                             <FontAwesomeIcon icon={faGithub} size="lg" />
+                        </a>
+                        <a
+                            href={LINKEDIN}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                            className="text-white hover:text-gray-300 transition-colors"
+                        >
+                            <FontAwesomeIcon icon={faLinkedin} size="lg" />
                         </a>
                         <a
                             href={`mailto:${EMAIL}`}
